@@ -8,6 +8,7 @@ import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import Navbar from './components/header/Navbar';
 import Footer from './components/footer/Footer';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/blogs' element={<Blog />}/>
         <Route path='/careers' element={<Careers />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='*' element={<NotFoundPage />}/>
       </Routes>
       <Footer />
     </div>
