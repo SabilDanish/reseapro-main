@@ -36,49 +36,49 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Home = () => {
-  const testimonialData = [
-    {
-      comment: "At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me... ",
-      name: "Seerwan O. Hasan",
-      designation: "M.B.Ch.B (University of Sulaimani/School of Medicine)",
-      image: testi1
-    },
-    {
-      comment: "I'm amazed by the quality of service provided by this company. They are always prompt and professional. Will definitely continue working with them.",
-      name: "Jane Smith",
-      designation: "Marketing Manager, ABC Corp",
-      image: testi2
-    },
-    {
-      comment: "Great experience with this product! It has exceeded my expectations and I can't imagine working without it now.",
-      name: "David Johnson",
-      designation: "CTO, Tech Innovations",
-      image: testi3
-    },
-    {
-      comment: "Excellent customer support! They are always available to help and resolve any issues promptly.",
-      name: "Amy Brown",
-      designation: "Operations Manager, Global Solutions",
-      image: testi4
-    }
-  ];
+  // const testimonialData = [
+  //   {
+  //     comment: "At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me... ",
+  //     name: "Seerwan O. Hasan",
+  //     designation: "M.B.Ch.B (University of Sulaimani/School of Medicine)",
+  //     image: testi1
+  //   },
+  //   {
+  //     comment: "I'm amazed by the quality of service provided by this company. They are always prompt and professional. Will definitely continue working with them.",
+  //     name: "Jane Smith",
+  //     designation: "Marketing Manager, ABC Corp",
+  //     image: testi2
+  //   },
+  //   {
+  //     comment: "Great experience with this product! It has exceeded my expectations and I can't imagine working without it now.",
+  //     name: "David Johnson",
+  //     designation: "CTO, Tech Innovations",
+  //     image: testi3
+  //   },
+  //   {
+  //     comment: "Excellent customer support! They are always available to help and resolve any issues promptly.",
+  //     name: "Amy Brown",
+  //     designation: "Operations Manager, Global Solutions",
+  //     image: testi4
+  //   }
+  // ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1
+  // };
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % 8);
-    }, 3000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % 8);
+  //   }, 3000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
   return (
     <>
       {/* Top Banner Starts here */}
@@ -156,28 +156,112 @@ const Home = () => {
         <div className='Choose-Card'>
           {/* Card 1 here */}
 
+          <Swiper
+            spaceBetween={10}
+            // centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            slidesPerView={2}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="testimonialSwiper"
+            // navigation={true}
+          >
+            <SwiperSlide>
+              <Card className='Choose-Cardstesti' style={{ width: '80%' }}>
+                <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
+                <Card.Body className="d-flex justify-content-start">
+                  <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
+                    <Card.Img
+                      variant="top"
+                      style={{
+                        width: '4rem',
+                        marginRight: '1rem',
+                        borderRadius: '50%',
+                        boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' // Adding box shadow
+                      }}
+                      src={testi1}
+                    />
+                  </div>
+                  <testim2>
+                    <Card.Title>Jane Doe</Card.Title>
+                    <Card.Text>CEO, Example Company</Card.Text>
+                  </testim2>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card className='Choose-Cardstesti' style={{ width: '80%' }}>
+                <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
+                <Card.Body className="d-flex justify-content-start">
+                  <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
+                    <Card.Img
+                      variant="top"
+                      style={{
+                        width: '4rem',
+                        marginRight: '1rem',
+                        borderRadius: '50%',
+                        boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' // Adding box shadow
+                      }}
+                      src={testi1}
+                    />
+                  </div>
+                  <testim2>
+                    <Card.Title>Jane Doe</Card.Title>
+                    <Card.Text>CEO, Example Company</Card.Text>
+                  </testim2>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card className='Choose-Cardstesti' style={{ width: '80%' }}>
+                <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
+                <Card.Body className="d-flex justify-content-start">
+                  <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
+                    <Card.Img
+                      variant="top"
+                      style={{
+                        width: '4rem',
+                        marginRight: '1rem',
+                        borderRadius: '50%',
+                        boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' // Adding box shadow
+                      }}
+                      src={testi1}
+                    />
+                  </div>
+                  <testim2>
+                    <Card.Title>Jane Doe</Card.Title>
+                    <Card.Text>CEO, Example Company</Card.Text>
+                  </testim2>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card className='Choose-Cardstesti' style={{ width: '80%' }}>
+                <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
+                <Card.Body className="d-flex justify-content-start">
+                  <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
+                    <Card.Img
+                      variant="top"
+                      style={{
+                        width: '4rem',
+                        marginRight: '1rem',
+                        borderRadius: '50%',
+                        boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' // Adding box shadow
+                      }}
+                      src={testi1}
+                    />
+                  </div>
+                  <testim2>
+                    <Card.Title>Jane Doe</Card.Title>
+                    <Card.Text>CEO, Example Company</Card.Text>
+                  </testim2>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
 
-          <Card className='Choose-Cardstesti' style={{ width: '35%' }}>
-            <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
-            <Card.Body className="d-flex justify-content-start">
-              <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
-                <Card.Img
-                  variant="top"
-                  style={{
-                    width: '4rem',
-                    marginRight: '1rem',
-                    borderRadius: '50%',
-                    boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' // Adding box shadow
-                  }}
-                  src={testi1}
-                />
-              </div>
-              <testim2>
-                <Card.Title>Jane Doe</Card.Title>
-                <Card.Text>CEO, Example Company</Card.Text>
-              </testim2>
-            </Card.Body>
-          </Card>      {/* Card 2 here */}
+          </Swiper>
         </div>
       </div>
 
@@ -222,27 +306,27 @@ const Home = () => {
       </div>
 
       {/* This is the starting of Our Partners Section */}
-<div className='partnergap'>
-      <Swiper
-        spaceBetween={10}
-        // centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        slidesPerView={5}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide><img src={partner1}  className="img-fluid" /></SwiperSlide>
-        <SwiperSlide><img src={partner2}  className="img-fluid" /></SwiperSlide>
-        <SwiperSlide><img src={partner3}  className="img-fluid" /></SwiperSlide>
-        <SwiperSlide><img src={partner4}  className="img-fluid" /></SwiperSlide>
-        <SwiperSlide><img src={partner5}  className="img-fluid" /></SwiperSlide>
-        <SwiperSlide><img src={partner1}  className="img-fluid" /></SwiperSlide>
-      </Swiper>
+      <div className='partnergap'>
+        <Swiper
+          spaceBetween={10}
+          // centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          slidesPerView={5}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide><img src={partner1} className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner2} className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner3} className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner4} className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner5} className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner1} className="img-fluid" /></SwiperSlide>
+        </Swiper>
       </div>
-    </>  
+    </>
 
   )
 }
