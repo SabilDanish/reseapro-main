@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <SocialMedia>
+
       <div className="App">
         <Navbar />
         <Routes>
@@ -34,7 +34,6 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </SocialMedia>
   );
 }
 
