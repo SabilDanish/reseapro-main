@@ -1,3 +1,4 @@
+
 @media (min-width: 1400px) {
     .topBanner {
         display: flex;
@@ -163,18 +164,91 @@
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* width: 45%; */
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
-.Home-Underline {
-    border-bottom: 0.4rem solid #016DCA;
-    width: 10%;
+.Choose-Cardslat{
+    text-align: left;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 45%; */
+    padding-bottom: 1rem;
 }
+
+.dividerzz {
+    background-color: #016DCA;
+    width: 5rem;
+    height: 5px;
+    margin-top: 1rem; /* Adjust as needed for spacing */
+    margin-bottom: 2rem;
+  }
+
 
 .ContentHead{
     margin-bottom: 0;
+}
+
+.image-slider-container {
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .image-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .image-slider img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .image-slider img.active {
+    transform: translateX(-100%);
+  }
+
+  testim{
+    margin-top: 0rem;
+    text-align: left;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  testim2{
+    justify-content: left;
+    text-align: left;
+  }
+  .Choose-Cardstesti{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+.img-fluid{
+padding-left: 1rem;
+justify-content: space-evenly;
+}
+
+.mySwiper{
+    width: 70%;
+}
+
+.partnergap{
+    margin-top: 5rem;
+}
+
+.testimonialSwiper{
+    width: 70%;
+    
 }
