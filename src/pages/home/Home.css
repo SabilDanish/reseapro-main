@@ -1,3 +1,7 @@
+.allHome{
+    display: flex;
+    flex-direction: column;
+}
 
 @media (min-width: 1400px) {
     .topBanner {
@@ -6,6 +10,7 @@
         background-color: #c6ddef;
         height: auto;
         padding: 5rem;
+        padding-left: 0;
     }
     .aboutus {
         display: flex;
@@ -13,6 +18,8 @@
         background-color: white;
         height: auto;
         padding: 5rem;
+        padding-left: 0;
+        /* padding-left: 3rem; */
     }
 
     .ContentHead {
@@ -50,7 +57,7 @@
         justify-content: center;
         background-color: #c6ddef;
         height: auto;
-        padding: 5rem;
+        /* padding: 5rem; */
     }
 
     .ContentHead {
@@ -125,6 +132,9 @@
     }
 }
 
+.testimonialWidth{
+width: 100%;
+}
 .custom-button {
     border: 3px solid #016DCA;
     /* Border width and color */
@@ -156,7 +166,15 @@
     justify-content: center;
 }
 .Choose-Card-Main{
-    width: 100%;
+    /* width: 100%;
+    max-width: 1200px;
+    margin-left: 10%;
+    padding: 10px; */
+    display: block;
+        justify-content: center;
+        height: auto;
+        padding: 5rem;
+        padding-left: 3rem;
 }
 
 .Choose-Cards{
@@ -233,7 +251,6 @@
     justify-content: left;
     align-items: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
 }
 .img-fluid{
 padding-left: 1rem;
@@ -245,10 +262,107 @@ justify-content: space-evenly;
 }
 
 .partnergap{
-    margin-top: 5rem;
+    display: block;
+        justify-content: center;
+        height: auto;
+        padding: 4rem;
 }
 
 .testimonialSwiper{
     width: 70%;
-    
 }
+
+.backColor{
+    background-color: #c6ddef;
+}
+/* Trial section css */
+
+.latest-news-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.latest-news-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+}
+
+.news-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.continue-link {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+    }
+    
+    .news-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
