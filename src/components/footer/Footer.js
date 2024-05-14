@@ -3,6 +3,7 @@ import './Footer.css';
 import { Container } from 'react-bootstrap';
 import logof from "../../utils/images/MainLogo.png";
 
+
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -12,7 +13,7 @@ const Footer = () => {
             <a href="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <div className="imagef"><img src={logof} /></div>
             </a>
-            <p className="text-body-secondary text-white mt-5">With more than 750+ editors and writers on our panel, we provide a healthy blend of inhouse as well as online expertise from top universities and research centers worldwide for services in scientific research manuscript editing, academic research paper editing, medical research paper editing, thesis editing, proofreading, manuscript formatting, medical writing, academic writing, business communication, and publication support services</p>
+            <p className="text-white">With more than 750+ editors and writers on our panel, we provide a healthy blend of inhouse as well as online expertise from top universities and research centers worldwide for services in scientific research manuscript editing, academic research paper editing, medical research paper editing, thesis editing, proofreading, manuscript formatting, medical writing, academic writing, business communication, and publication support services</p>
           </div>
 
           <div className="col mb-3">

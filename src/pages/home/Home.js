@@ -106,7 +106,7 @@ const Home = () => {
         <div className="image"><img src={about} /></div>
       </div>
       {/* Why Choose Us Section starts here */}
-
+    
       <div className='Choose-Card-Main'>
         <h1 className='ContentHead ContentHeadWhyChooseUs'>Why Choose Us</h1>
         <div className="dividerzz"></div>
@@ -150,7 +150,7 @@ const Home = () => {
         </div>
       </div>
       {/* Testimonial Section Starts here */}
-      <div className='Choose-Card-Main'>
+      <div className='Choose-Card-Main backColor'>
         <h1 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h1>
         <div className="dividerzz"></div>
         <div className='Choose-Card'>
@@ -169,7 +169,7 @@ const Home = () => {
             // navigation={true}
           >
             <SwiperSlide>
-              <Card className='Choose-Cardstesti' style={{ width: '80%' }}>
+              <Card className='Choose-Cardstesti testimonialWidth'>
                 <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
@@ -192,7 +192,7 @@ const Home = () => {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              <Card className='Choose-Cardstesti' style={{ width: '80%' }}>
+              <Card className='Choose-Cardstesti testimonialWidth'>
                 <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
@@ -215,7 +215,7 @@ const Home = () => {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              <Card className='Choose-Cardstesti' style={{ width: '80%' }}>
+              <Card className='Choose-Cardstesti testimonialWidth'>
                 <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
@@ -238,7 +238,7 @@ const Home = () => {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              <Card className='Choose-Cardstesti' style={{ width: '80%' }}>
+              <Card className='Choose-Cardstesti testimonialWidth'>
                 <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
@@ -264,8 +264,6 @@ const Home = () => {
           </Swiper>
         </div>
       </div>
-
-
 
 
 
