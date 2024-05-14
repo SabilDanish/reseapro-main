@@ -2,7 +2,7 @@ import { Button, Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import topBanner from "../../utils/images/BannerReseaproHome.jpg";
 import './Home.css';
-import topban from "../../utils/images/Banner.png";
+import topban from "../../utils/images/Banner-f.png";
 import about from "../../utils/images/Aboutus.png";
 import Card1 from "../../utils/images/WhyChooseUs/reseapro-icons1.png";
 import Card2 from "../../utils/images/WhyChooseUs/reseapro-icons2.png";
@@ -36,55 +36,16 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Home = () => {
-  // const testimonialData = [
-  //   {
-  //     comment: "At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me... ",
-  //     name: "Seerwan O. Hasan",
-  //     designation: "M.B.Ch.B (University of Sulaimani/School of Medicine)",
-  //     image: testi1
-  //   },
-  //   {
-  //     comment: "I'm amazed by the quality of service provided by this company. They are always prompt and professional. Will definitely continue working with them.",
-  //     name: "Jane Smith",
-  //     designation: "Marketing Manager, ABC Corp",
-  //     image: testi2
-  //   },
-  //   {
-  //     comment: "Great experience with this product! It has exceeded my expectations and I can't imagine working without it now.",
-  //     name: "David Johnson",
-  //     designation: "CTO, Tech Innovations",
-  //     image: testi3
-  //   },
-  //   {
-  //     comment: "Excellent customer support! They are always available to help and resolve any issues promptly.",
-  //     name: "Amy Brown",
-  //     designation: "Operations Manager, Global Solutions",
-  //     image: testi4
-  //   }
-  // ];
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1
-  // };
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % 8);
-  //   }, 3000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
   return (
-    <>
+    <div className="allHome">
+
+
+
       {/* Top Banner Starts here */}
       <div className="topBanner">
         <div className="content">
-          <h1 className='ContentHead'>Welcome to the home of academic and corporate services...</h1>
+          <h2 className='ContentHead'>Welcome to the home of academic and corporate services...</h2>
           <p className='Content-Para'>Reseapro® Scientific Services (P) Limited is a leading research service-based
             company providing customized and on-demand scientific solutions and expertise
             worldwide.</p>
@@ -92,10 +53,15 @@ const Home = () => {
         </div>
         <div className="image"><img src={topban} /></div>
       </div>
+
+
+
+
       {/* About us section start here */}
+
       <div className="aboutus">
         <div className="content">
-          <h1 className='ContentHead ContentHeadAboutUs'>About Us</h1>
+          <h2 className='ContentHead ContentHeadAboutUs'>About Us</h2>
           <div className="dividerzz"></div>
 
           <p className='Content-Para'>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
@@ -105,10 +71,12 @@ const Home = () => {
         </div>
         <div className="image"><img src={about} /></div>
       </div>
+
+
       {/* Why Choose Us Section starts here */}
     
       <div className='Choose-Card-Main'>
-        <h1 className='ContentHead ContentHeadWhyChooseUs'>Why Choose Us</h1>
+        <h2 className='ContentHead ContentHeadWhyChooseUs'>Why Choose Us</h2>
         <div className="dividerzz"></div>
         <div className='Choose-Card'>
           {/* Card 1 here */}
@@ -149,9 +117,12 @@ const Home = () => {
           </Card>
         </div>
       </div>
+
+
+
       {/* Testimonial Section Starts here */}
       <div className='Choose-Card-Main backColor'>
-        <h1 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h1>
+        <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
         <div className="dividerzz"></div>
         <div className='Choose-Card'>
           {/* Card 1 here */}
@@ -170,7 +141,7 @@ const Home = () => {
           >
             <SwiperSlide>
               <Card className='Choose-Cardstesti testimonialWidth'>
-                <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
+                <testim>" I am writing this letter as a humble note of appreciation for the outstanding service of Manuscriptedit.com. The ability to provide the resolution quickly exceeded my expectations. I want to take the time to acknowledge your contribution to my recent works."</testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
                     <Card.Img
@@ -181,19 +152,21 @@ const Home = () => {
                         borderRadius: '50%',
                         boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' // Adding box shadow
                       }}
-                      src={testi1}
+                      src={testi4}
                     />
                   </div>
                   <testim2>
-                    <Card.Title>Jane Doe</Card.Title>
-                    <Card.Text>CEO, Example Company</Card.Text>
+                    <Card.Title>Salma Aldallal</Card.Title>
+                    <Card.Text> </Card.Text>
                   </testim2>
                 </Card.Body>
               </Card>
             </SwiperSlide>
             <SwiperSlide>
               <Card className='Choose-Cardstesti testimonialWidth'>
-                <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
+                <testim>" We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."
+
+</testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
                     <Card.Img
@@ -208,15 +181,15 @@ const Home = () => {
                     />
                   </div>
                   <testim2>
-                    <Card.Title>Jane Doe</Card.Title>
-                    <Card.Text>CEO, Example Company</Card.Text>
+                    <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
+                    <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
                   </testim2>
                 </Card.Body>
               </Card>
             </SwiperSlide>
             <SwiperSlide>
               <Card className='Choose-Cardstesti testimonialWidth'>
-                <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
+                <testim>" At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me... "</testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
                     <Card.Img
@@ -227,19 +200,19 @@ const Home = () => {
                         borderRadius: '50%',
                         boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' // Adding box shadow
                       }}
-                      src={testi1}
+                      src={testi2}
                     />
                   </div>
                   <testim2>
-                    <Card.Title>Jane Doe</Card.Title>
-                    <Card.Text>CEO, Example Company</Card.Text>
+                    <Card.Title>Seerwan O. Hasan</Card.Title>
+                    <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
                   </testim2>
                 </Card.Body>
               </Card>
             </SwiperSlide>
             <SwiperSlide>
               <Card className='Choose-Cardstesti testimonialWidth'>
-                <testim>"Some quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the cardSome quick example text to build on the card"</testim>
+                <testim>"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that | am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
                     <Card.Img
@@ -250,12 +223,12 @@ const Home = () => {
                         borderRadius: '50%',
                         boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' // Adding box shadow
                       }}
-                      src={testi1}
+                      src={testi3}
                     />
                   </div>
                   <testim2>
-                    <Card.Title>Jane Doe</Card.Title>
-                    <Card.Text>CEO, Example Company</Card.Text>
+                    <Card.Title>Dr. Laref Nora</Card.Title>
+                    <Card.Text> </Card.Text>
                   </testim2>
                 </Card.Body>
               </Card>
@@ -270,7 +243,7 @@ const Home = () => {
       {/* Latest News section here */}
 
       <div className='Choose-Card-Main'>
-        <h1 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h1>
+        <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
         <div className="dividerzz"></div>
         <div className='Choose-Card'>
           {/* Card 1 here */}
@@ -303,8 +276,12 @@ const Home = () => {
         </div>
       </div>
 
+
+
       {/* This is the starting of Our Partners Section */}
       <div className='partnergap'>
+      <h2 className='ContentHead'>Our Partners</h2>
+      <div className="dividerzz"></div>
         <Swiper
           spaceBetween={10}
           // centeredSlides={true}
@@ -324,7 +301,7 @@ const Home = () => {
           <SwiperSlide><img src={partner1} className="img-fluid" /></SwiperSlide>
         </Swiper>
       </div>
-    </>
+    </div>
 
   )
 }

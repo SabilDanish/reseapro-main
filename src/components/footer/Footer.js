@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Container } from 'react-bootstrap';
 import logof from "../../utils/images/MainLogo.png";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -10,9 +11,9 @@ const Footer = () => {
       <Container fluid>
         <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
           <div className="col mb-3">
-            <a href="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <Link to="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <div className="imagef"><img src={logof} /></div>
-            </a>
+            </Link>
             <p className="text-white">With more than 750+ editors and writers on our panel, we provide a healthy blend of inhouse as well as online expertise from top universities and research centers worldwide for services in scientific research manuscript editing, academic research paper editing, medical research paper editing, thesis editing, proofreading, manuscript formatting, medical writing, academic writing, business communication, and publication support services</p>
           </div>
 
