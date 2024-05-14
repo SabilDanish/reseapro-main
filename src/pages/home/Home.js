@@ -36,49 +36,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Home = () => {
-  // const testimonialData = [
-  //   {
-  //     comment: "At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me... ",
-  //     name: "Seerwan O. Hasan",
-  //     designation: "M.B.Ch.B (University of Sulaimani/School of Medicine)",
-  //     image: testi1
-  //   },
-  //   {
-  //     comment: "I'm amazed by the quality of service provided by this company. They are always prompt and professional. Will definitely continue working with them.",
-  //     name: "Jane Smith",
-  //     designation: "Marketing Manager, ABC Corp",
-  //     image: testi2
-  //   },
-  //   {
-  //     comment: "Great experience with this product! It has exceeded my expectations and I can't imagine working without it now.",
-  //     name: "David Johnson",
-  //     designation: "CTO, Tech Innovations",
-  //     image: testi3
-  //   },
-  //   {
-  //     comment: "Excellent customer support! They are always available to help and resolve any issues promptly.",
-  //     name: "Amy Brown",
-  //     designation: "Operations Manager, Global Solutions",
-  //     image: testi4
-  //   }
-  // ];
-
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1
-  // };
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % 8);
-  //   }, 3000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
+ 
   return (
     <>
       {/* Top Banner Starts here */}
