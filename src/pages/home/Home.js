@@ -32,11 +32,19 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import BannerButtons from '../../components/buttons/BannerButtons';
+import Loader from '../../components/loader/Loader';
 
 
 
-const Home = () => {
-
+const Home = ({loading}) => {
+  if(loading){
+    return (
+      <div className='Loader'>
+        <Loader />
+      </div>
+    )
+  }
   return (
     <div className="allHome">
 
@@ -49,7 +57,8 @@ const Home = () => {
           <p className='Content-Para'>Reseapro® Scientific Services (P) Limited is a leading research service-based
             company providing customized and on-demand scientific solutions and expertise
             worldwide.</p>
-          <button className="custom-button">KNOW MORE</button>
+          {/* <button className="custom-button">KNOW MORE</button> */}
+          <BannerButtons title={"KNOW MORE"} />
         </div>
         <div className="image"><img src={topban} /></div>
       </div>
@@ -67,14 +76,14 @@ const Home = () => {
           <p className='Content-Para'>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
           <p className='Content-Para'>Reseapro® is a company limited by shares, founded according to the Companies Act
             1956 and incorporated in February 2009…..</p>
-          <button className="custom-button">KNOW MORE</button>
+          <BannerButtons title={"KNOW MORE"} />
         </div>
         <div className="image"><img src={about} /></div>
       </div>
 
 
       {/* Why Choose Us Section starts here */}
-    
+
       <div className='Choose-Card-Main'>
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Why Choose Us</h2>
         <div className="dividerzz"></div>
@@ -89,7 +98,7 @@ const Home = () => {
                 communities we serve.
               </Card.Text>
             </Card.Body>
-            <Button variant="primary">KNOW MORE</Button>
+            <BannerButtons title={"KNOW MORE"} />
           </Card>
           {/* Card 2 here */}
           <Card className='Choose-Cards' style={{ width: '25rem' }}>
@@ -101,7 +110,7 @@ const Home = () => {
                 other resources.
               </Card.Text>
             </Card.Body>
-            <Button variant="primary">KNOW MORE</Button>
+            <BannerButtons title={"KNOW MORE"} />
           </Card>
           {/* Card 3 here */}
           <Card className='Choose-Cards' style={{ width: '25rem' }}>
@@ -113,7 +122,7 @@ const Home = () => {
                 setup, and administration.
               </Card.Text>
             </Card.Body>
-            <Button variant="primary">KNOW MORE</Button>
+            <BannerButtons title={"KNOW MORE"} />
           </Card>
         </div>
       </div>
@@ -137,7 +146,7 @@ const Home = () => {
             slidesPerView={2}
             modules={[Autoplay, Pagination, Navigation]}
             className="testimonialSwiper"
-            // navigation={true}
+          // navigation={true}
           >
             <SwiperSlide>
               <Card className='Choose-Cardstesti testimonialWidth'>
@@ -166,7 +175,7 @@ const Home = () => {
               <Card className='Choose-Cardstesti testimonialWidth'>
                 <testim>" We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."
 
-</testim>
+                </testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
                     <Card.Img
@@ -280,8 +289,8 @@ const Home = () => {
 
       {/* This is the starting of Our Partners Section */}
       <div className='partnergap'>
-      <h2 className='ContentHead'>Our Partners</h2>
-      <div className="dividerzz"></div>
+        <h2 className='ContentHead'>Our Partners</h2>
+        <div className="dividerzz"></div>
         <Swiper
           spaceBetween={10}
           // centeredSlides={true}

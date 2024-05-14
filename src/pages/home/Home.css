@@ -1,4 +1,4 @@
-.allHome{
+.allHome {
     display: flex;
     flex-direction: column;
 }
@@ -12,6 +12,7 @@
         padding: 5rem;
         padding-left: 0;
     }
+
     .aboutus {
         display: flex;
         justify-content: space-between;
@@ -132,52 +133,30 @@
     }
 }
 
-.testimonialWidth{
-width: 100%;
-}
-.custom-button {
-    border: 3px solid #016DCA;
-    /* Border width and color */
-    border-radius: 10px;
-    /* Border radius */
-    padding: 5px 50px;
-    /* Adjust padding as needed */
-    font-size: 16px;
-    /* Adjust font size as needed */
-    background-color: white;
-    /* Transparent background */
-    color: #016DCA;
-    /* Text color */
-    cursor: pointer;
-    /* Show pointer cursor on hover */
-
+.testimonialWidth {
+    width: 100%;
+    display: none;
 }
 
-.custom-button:hover {
-    background-color: #016DCA;
-    /* Change background color on hover */
-    color: #fff;
-    /* Change text color on hover */
-}
-
-.Choose-Card{
+.Choose-Card {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.Choose-Card-Main{
+
+.Choose-Card-Main {
     /* width: 100%;
     max-width: 1200px;
     margin-left: 10%;
     padding: 10px; */
     display: block;
-        justify-content: center;
-        height: auto;
-        padding: 5rem;
-        padding-left: 3rem;
+    justify-content: center;
+    height: auto;
+    padding: 5rem;
+    padding-left: 3rem;
 }
 
-.Choose-Cards{
+.Choose-Cards {
     text-align: center;
     margin: 1rem;
     display: flex;
@@ -189,7 +168,7 @@ width: 100%;
     padding-bottom: 1rem;
 }
 
-.Choose-Cardslat{
+.Choose-Cardslat {
     text-align: left;
     margin: 1rem;
     display: flex;
@@ -205,12 +184,13 @@ width: 100%;
     background-color: #016DCA;
     width: 5rem;
     height: 5px;
-    margin-top: 1rem; /* Adjust as needed for spacing */
+    margin-top: 1rem;
+    /* Adjust as needed for spacing */
     margin-bottom: 2rem;
-  }
+}
 
 
-.ContentHead{
+.ContentHead {
     margin-bottom: 0;
 }
 
@@ -218,33 +198,35 @@ width: 100%;
     width: 100%;
     overflow: hidden;
     height: 200px;
-  }
-  
-  .image-slider {
+}
+
+.image-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .image-slider img {
+}
+
+.image-slider img {
     width: 200px;
     height: 200px;
-  }
-  
-  .image-slider img.active {
-    transform: translateX(-100%);
-  }
+}
 
-  testim{
+.image-slider img.active {
+    transform: translateX(-100%);
+}
+
+testim {
     margin-top: 0rem;
     text-align: left;
     padding: 1rem;
     padding-bottom: 0;
-  }
-  testim2{
+}
+
+testim2 {
     justify-content: left;
     text-align: left;
-  }
-  .Choose-Cardstesti{
+}
+
+.Choose-Cardstesti {
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -252,29 +234,31 @@ width: 100%;
     align-items: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.img-fluid{
-padding-left: 1rem;
-justify-content: space-evenly;
+
+.img-fluid {
+    justify-content: space-evenly;
 }
 
-.mySwiper{
+.mySwiper {
     width: 70%;
 }
 
-.partnergap{
+.partnergap {
     display: block;
-        justify-content: center;
-        height: auto;
-        padding: 4rem;
+    justify-content: center;
+    height: auto;
+    padding: 5rem;
+    padding-left: 3rem;
 }
 
-.testimonialSwiper{
+.testimonialSwiper {
     width: 70%;
 }
 
-.backColor{
+.backColor {
     background-color: #c6ddef;
 }
+
 /* Trial section css */
 
 .latest-news-section {
@@ -341,28 +325,9 @@ justify-content: space-evenly;
     .news-container {
         flex-direction: column;
     }
-    
+
     .news-item {
         max-width: 100%;
         margin-bottom: 20px;
     }
 }
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
