@@ -1,0 +1,44 @@
+/* .socialIcon img {
+    height: 35px;
+} */
+
+.socialIcons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px !important;
+    justify-content: end;
+}
+
+.Social-Media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    /* Adjust width as needed */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.2);
+    /* Semi-transparent background */
+    z-index: 999;
+    /* Ensure icons stay on top of other content */
+}
+
+.Social-Media img {
+    margin-bottom: 10px;
+    color: black;
+    /* Add some spacing between icons */
+}
+
+.Main-Body {
+    /* margin-left: 50px; */
+    /* Adjust to account for the width of social media icons */
+    width: 100%;
+    /* Set width to cover the remaining space */
+    height: 100vh;
+    overflow-y: auto;
+    /* Enable vertical scrolling if needed */
+}

@@ -9,6 +9,7 @@ import Navbar from './components/header/Navbar';
 import Footer from './components/footer/Footer';
 import NotFoundPage from './pages/NotFoundPage';
 import { useEffect, useState } from 'react';
+import SocialMedia from './components/socialMedia/SocialMedia';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,18 +21,20 @@ function App() {
   }, []);
 
   return (
-    <div className="App"> 
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home loading={loading}/>}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='/blogs' element={<Blog />}/>
-        <Route path='/careers' element={<Careers />}/>
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='*' element={<NotFoundPage />}/>
-      </Routes>
-      <Footer />
-    </div>
+    <SocialMedia>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home loading={loading} />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/blogs' element={<Blog />} />
+          <Route path='/careers' element={<Careers />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </SocialMedia>
   );
 }
 

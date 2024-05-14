@@ -9,6 +9,8 @@ import linkedin from '../../utils/images/SocialIcons/linkedin.png'
 import youtube from '../../utils/images/SocialIcons/youtube.png'
 import twitter from '../../utils/images/SocialIcons/twitter.png'
 import skype from '../../utils/images/SocialIcons/skype.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
 
@@ -22,7 +24,9 @@ const Footer = () => {
         <div className='row'>
           <div className='col-lg-3' >
             <div className='logo'>
-              <img src={logof} alt="Main Logo" />
+              <Link to="/">
+                <img src={logof} alt="Main Logo" onClick={scrollToTop}/>
+              </Link>
             </div>
             <div className='logo-Content'>
               <p>With more than 750+ editors and
@@ -117,54 +121,54 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link to="/" style={{ textDecoration: "none" }}>
-                  <strong><p>
+                    <strong><p>
                       Home
-                    </p></strong>   
+                    </p></strong>
                     <hr></hr>
                   </Link>
                 </li>
 
                 <li>
                   <Link to="/" style={{ textDecoration: "none" }}>
-                  <strong><p>
+                    <strong><p>
                       About Us
-                    </p></strong>  
+                    </p></strong>
                     <hr></hr>
                   </Link>
                 </li>
 
                 <li>
                   <Link to="/" style={{ textDecoration: "none" }}>
-                  <strong><p>
+                    <strong><p>
                       Service
-                    </p></strong>  
+                    </p></strong>
                     <hr></hr>
                   </Link>
                 </li>
 
                 <li>
                   <Link to="/" style={{ textDecoration: "none" }}>
-                  <strong><p>
+                    <strong><p>
                       Blogs
-                    </p></strong>  
+                    </p></strong>
                     <hr></hr>
                   </Link>
                 </li>
 
                 <li>
                   <Link to="/" style={{ textDecoration: "none" }}>
-                  <strong><p>
+                    <strong><p>
                       Contact us
-                    </p></strong>  
+                    </p></strong>
                     <hr></hr>
                   </Link>
                 </li>
 
                 <li>
                   <Link to="/" style={{ textDecoration: "none" }}>
-                  <strong><p>
+                    <strong><p>
                       Privacy Policy
-                    </p></strong>  
+                    </p></strong>
                     <hr></hr>
                   </Link>
                 </li>
@@ -183,35 +187,35 @@ const Footer = () => {
             <div className='Links1'>
               <Link to="/" style={{ textDecoration: "none" }}>
                 <p>
-                  <span class="world-icon">&#127758;</span>
+                  <FontAwesomeIcon icon={faEarthAmericas} />{" "}
                   OCAC Tower, Bhubaneswar 751013, INDIA
                 </p>
               </Link>
 
               <Link to="/" style={{ textDecoration: "none" }}>
                 <p>
-                  <span class="world-icon">&#127758;</span>
+                  <FontAwesomeIcon icon={faEarthAmericas} />{" "}
                   Level 9 Raheja Towers, 26-27 Mahatma Gandhi Road, Bangalore-560 001, INDIA
                 </p>
               </Link>
 
               <Link to="/" style={{ textDecoration: "none" }}>
                 <p>
-                  <span class="world-icon">&#127758;</span>
+                  <FontAwesomeIcon icon={faEarthAmericas} />{" "}
                   GMA, 8th Floor, ASTEM Bldg. KRP, 134 Chudoji Minamimachi, Shimogyo-ku, KYOTO - 6008813, JAPAN
                 </p>
               </Link>
 
               <Link to="/" style={{ textDecoration: "none" }}>
                 <p>
-                  <span class="world-icon">&#127758;</span>
+                  <FontAwesomeIcon icon={faEarthAmericas} />{" "}
                   2530 Meridian Parkway, Suite 300, Durham, NC, 27713, USA
                 </p>
               </Link>
 
               <Link to="/" style={{ textDecoration: "none" }}>
                 <p>
-                  <span class="world-icon">&#127758;</span>
+                  <FontAwesomeIcon icon={faEarthAmericas} />{" "}
                   26 Kings Hill Avenue, Kings Hill, West Malling, Maidstone, ME19 4AE, MAIDSTONE, UK
                 </p>
               </Link>
@@ -223,23 +227,23 @@ const Footer = () => {
         </div>
       </div>
 
-      
-        <div class="container-fluid FootConSocial" >
-          <div class="row ">
-            <div class="col-lg-6 SocialRow">
-<p>Copyrights © 2021 Reseapro Scientific Services (P) Ltd.</p>
-            </div>
 
-            <div class="col-lg-6 socialIcon">
+      <div class="container-fluid FootConSocial" >
+        <div class="row ">
+          <div class="col-lg-6 SocialRow">
+            <p>Copyrights © 2021 Reseapro Scientific Services (P) Ltd.</p>
+          </div>
+
+          <div class="col-lg-6 socialIcon">
             <img src={facebook} />
             <img src={linkedin} />
             <img src={youtube} />
             <img src={twitter} />
             <img src={skype} />
-            </div>
           </div>
         </div>
-      
+      </div>
+
 
     </>
   )
