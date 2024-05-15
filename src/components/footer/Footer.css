@@ -3,7 +3,7 @@
 }
 
 .logo {
-  text-align: center;
+  margin-left: 19px;
   margin-top: 20px;
 }
 
@@ -86,4 +86,12 @@ text-align: start;
     gap: 8px;
     margin-top: 5px !important;
     justify-content: end;
+}
+
+.Links1 li {
+  color: antiquewhite;
+}
+
+.ImageWave{
+  width: 100%;
 }

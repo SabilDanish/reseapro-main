@@ -60,7 +60,7 @@ const Home = ({loading}) => {
           {/* <button className="custom-button">KNOW MORE</button> */}
           <BannerButtons title={"KNOW MORE"} />
         </div>
-        <div className="image"><img src={topban} /></div>
+        {/* <div className="image"><img src={topban} /></div> */}
       </div>
 
 
@@ -78,7 +78,7 @@ const Home = ({loading}) => {
             1956 and incorporated in February 2009…..</p>
           <BannerButtons title={"KNOW MORE"} />
         </div>
-        <div className="image"><img src={about} /></div>
+        {/* <div className="image"><img src={about} /></div> */}
       </div>
 
 

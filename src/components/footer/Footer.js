@@ -3,7 +3,7 @@ import './Footer.css';
 import { Container } from 'react-bootstrap';
 import logof from "../../utils/images/MainLogo.png";
 import { Link } from 'react-router-dom';
-import wave from '../../utils/images/wave.svg'
+import wave from '../../utils/images/wave.png'
 import facebook from '../../utils/images/SocialIcons/facebook.png'
 import linkedin from '../../utils/images/SocialIcons/linkedin.png'
 import youtube from '../../utils/images/SocialIcons/youtube.png'
@@ -19,7 +19,9 @@ const Footer = () => {
   };
   return (
     <>
-      <img src={wave} />
+
+    <div className='col-lg-12'><img src={wave} className='ImageWave' /></div>
+      
       <div className='container-fluid FootCon'>
         <div className='row'>
           <div className='col-lg-3' >
