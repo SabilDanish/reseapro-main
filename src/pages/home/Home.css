@@ -6,6 +6,10 @@
     background-color: #c6ddef;
     
 }
+
+.my-5{
+   align-items: center;
+}
 .Content-Para{
     padding-top: 1rem;
 }
@@ -256,4 +260,6 @@ justify-content: space-evenly;
     font-style: normal;
   }
   /* ------------------------------Adding new CSS */
+
+  
   
