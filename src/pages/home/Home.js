@@ -143,7 +143,7 @@ const Home = () => {
 
        {/* ........................................................................................................................Kana aluo karichu ame */}
 
-      <Container className='Counter'>
+      {/* <Container className='Counter container-fluid'>
         <div className='contCounter'>
           <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
           <div className="dividerzz1"></div>
@@ -164,9 +164,58 @@ const Home = () => {
           <div className="dividerzz1"></div>
           <p className='Counter-Text'>Clients</p>
         </div>
+      </Container> */}
+<Container className="my-5">
+        {isDesktop ? (
+               <Container className='Counter'>
+               <div className='contCounter'>
+                 <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
+                 <div className="dividerzz1"></div>
+                 <p className='Counter-Text'>Successfull Projects</p>
+               </div>
+               <div className='contCounter'>
+                 <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
+                 <div className="dividerzz1"></div>
+                 <p className='Counter-Text'>Experts</p>
+               </div>
+               <div className='contCounter'>
+                 <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
+                 <div className="dividerzz1"></div>
+                 <p className='Counter-Text'>Countries</p>
+               </div>
+               <div className='contCounter'>
+                 <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
+                 <div className="dividerzz1"></div>
+                 <p className='Counter-Text'>Clients</p>
+               </div>
+             </Container>
+        ) : (
+          <Container className='Counter'>
+            <div>
+          <div className='contCounter'>
+            <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
+            <div className="dividerzz1"></div>
+            <p className='Counter-Text'>Successfull Projects</p>
+          </div>
+          <div className='contCounter'>
+            <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
+            <div className="dividerzz1"></div>
+            <p className='Counter-Text'>Experts</p>
+          </div></div>
+          <div>
+          <div className='contCounter'>
+            <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
+            <div className="dividerzz1"></div>
+            <p className='Counter-Text'>Countries</p>
+          </div>
+          <div className='contCounter'>
+            <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
+            <div className="dividerzz1"></div>
+            <p className='Counter-Text'>Clients</p>
+          </div></div>
+        </Container>
+        )}
       </Container>
-
-
       {/* ........................................................................................................................Testimonial Section */}
       <Container className="my-5">
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
@@ -384,6 +433,7 @@ const Home = () => {
               <img src={partner2} alt="Partner" className="img-fluid" />
               <img src={partner3} alt="Partner" className="img-fluid" />
               <img src={partner4} alt="Partner" className="img-fluid" />
+              <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
@@ -391,6 +441,7 @@ const Home = () => {
               <img src={partner3} alt="Partner" className="img-fluid" />
               <img src={partner4} alt="Partner" className="img-fluid" />
               <img src={partner1} alt="Partner" className="img-fluid" />
+              <img src={partner2} alt="Partner" className="img-fluid" />
               <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
