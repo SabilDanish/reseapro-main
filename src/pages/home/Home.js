@@ -1,4 +1,4 @@
-import { Button, Container } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import topBanner from "../../utils/images/BannerReseaproHome.jpg";
 import './Home.css';
@@ -43,93 +43,114 @@ const Home = () => {
 
 
       {/* Top Banner Starts here */}
-      <div className="topBanner">
-        <div className="content">
-          <h2 className='ContentHead'>Welcome to the home of academic and corporate services...</h2>
-          <p className='Content-Para'>Reseapro® Scientific Services (P) Limited is a leading research service-based
-            company providing customized and on-demand scientific solutions and expertise
-            worldwide.</p>
-          <button className="custom-button">KNOW MORE</button>
-        </div>
-        <div className="image"><img src={topban} /></div>
-      </div>
 
-
+<div className="topBanner">
+      <Container>
+        <Row className="align-items-center">
+          <Col md={6}>
+            <div className="content">
+              <h2 className='ContentHead'>Welcome to the home of academic and corporate services...</h2>
+              <p className='Content-Para'>Reseapro® Scientific Services (P) Limited is a leading research service-based
+                company providing customized and on-demand scientific solutions and expertise
+                worldwide.</p>
+              <Button variant="primary" className="custom-button">KNOW MORE</Button>
+            </div>
+          </Col>
+          <Col md={6}>
+            <div className="image">
+              <img src={topban} alt="Top Banner" className="img-fluid" />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
 
 
       {/* About us section start here */}
 
       <div className="aboutus">
-        <div className="content">
-          <h2 className='ContentHead ContentHeadAboutUs'>About Us</h2>
-          <div className="dividerzz"></div>
-
-          <p className='Content-Para'>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
-          <p className='Content-Para'>Reseapro® is a company limited by shares, founded according to the Companies Act
-            1956 and incorporated in February 2009…..</p>
-          <button className="custom-button">KNOW MORE</button>
-        </div>
-        <div className="image"><img src={about} /></div>
-      </div>
+      <Container>
+        <Row className="align-items-center">
+          <Col md={6}>
+            <div className="content">
+              <h2 className='ContentHead'>About Us</h2>
+              <p className='Content-Para'>Reseapro® Scientific Services (P) Limited is a leading research service-based
+company providing customized and on-demand scientific solutions and expertise
+worldwide. </p><p>Reseapro® is a company limited by shares, founded according to the Companies Act 1956 and incorporated in February 2009…..</p>
+              <Button variant="primary" className="custom-button">KNOW MORE</Button>
+            </div>
+          </Col>
+          <Col md={6}>
+            <div className="image">
+              <img src={about} alt="Top Banner" className="img-fluid" />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
 
 
       {/* Why Choose Us Section starts here */}
-    
       <div className='Choose-Card-Main'>
+      <Container>
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Why Choose Us</h2>
         <div className="dividerzz"></div>
-        <div className='Choose-Card'>
-          {/* Card 1 here */}
-          <Card className='Choose-Cards' style={{ width: '25rem' }}>
-            <Card.Img variant="top" style={{ width: '8rem' }} src={Card1} />
-            <Card.Body>
-              <Card.Title>Time Tested Expertise</Card.Title>
-              <Card.Text>
-                Read more about our mission, our products and
-                communities we serve.
-              </Card.Text>
-            </Card.Body>
-            <Button variant="primary">KNOW MORE</Button>
-          </Card>
-          {/* Card 2 here */}
-          <Card className='Choose-Cards' style={{ width: '25rem' }}>
-            <Card.Img variant="top" style={{ width: '8rem' }} src={Card2} />
-            <Card.Body>
-              <Card.Title>Strong Market Analytics</Card.Title>
-              <Card.Text>
-                See all ProQuest products and services and
-                other resources.
-              </Card.Text>
-            </Card.Body>
-            <Button variant="primary">KNOW MORE</Button>
-          </Card>
-          {/* Card 3 here */}
-          <Card className='Choose-Cards' style={{ width: '25rem' }}>
-            <Card.Img variant="top" style={{ width: '8rem' }} src={Card3} />
-            <Card.Body>
-              <Card.Title>Technology and knowledge Transfer</Card.Title>
-              <Card.Text>
-                Find answers to questions about products,
-                setup, and administration.
-              </Card.Text>
-            </Card.Body>
-            <Button variant="primary">KNOW MORE</Button>
-          </Card>
-        </div>
-      </div>
+        <Row>
+          <Col md={4}>
+            <Card className='Choose-Cards' style={{ width: '100%' }}>
+              <Card.Img variant="top" style={{ width: '8rem' }} src={Card1} />
+              <Card.Body>
+                <Card.Title>Time Tested Expertise</Card.Title>
+                <Card.Text>
+                  Read more about our mission, our products and
+                  communities we serve.
+                </Card.Text>
+              </Card.Body>
+              <Button variant="primary">KNOW MORE</Button>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className='Choose-Cards' style={{ width: '100%' }}>
+              <Card.Img variant="top" style={{ width: '8rem' }} src={Card2} />
+              <Card.Body>
+                <Card.Title>Strong Market Analytics</Card.Title>
+                <Card.Text>
+                  See all ProQuest products and services and
+                  other resources.
+                </Card.Text>
+              </Card.Body>
+              <Button variant="primary">KNOW MORE</Button>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className='Choose-Cards' style={{ width: '100%' }}>
+              <Card.Img variant="top" style={{ width: '8rem' }} src={Card3} />
+              <Card.Body>
+                <Card.Title>Technology and Knowledge Transfer</Card.Title>
+                <Card.Text>
+                  Find answers to questions about products,
+                  setup, and administration.
+                </Card.Text>
+              </Card.Body>
+              <Button variant="primary">KNOW MORE</Button>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+
 
 
 
       {/* Testimonial Section Starts here */}
-      <div className='Choose-Card-Main backColor'>
+
+      {/* <div className='Choose-Card-Main backColor'>
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
         <div className="dividerzz"></div>
         <div className='Choose-Card'>
-          {/* Card 1 here */}
 
           <Swiper
             spaceBetween={10}
-            // centeredSlides={true}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
@@ -137,7 +158,6 @@ const Home = () => {
             slidesPerView={2}
             modules={[Autoplay, Pagination, Navigation]}
             className="testimonialSwiper"
-            // navigation={true}
           >
             <SwiperSlide>
               <Card className='Choose-Cardstesti testimonialWidth'>
@@ -166,7 +186,7 @@ const Home = () => {
               <Card className='Choose-Cardstesti testimonialWidth'>
                 <testim>" We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."
 
-</testim>
+                </testim>
                 <Card.Body className="d-flex justify-content-start">
                   <div style={{ marginRight: '1rem', marginLeft: 'auto' }}>
                     <Card.Img
@@ -236,17 +256,146 @@ const Home = () => {
 
           </Swiper>
         </div>
-      </div>
+      </div> */}
+<Container className="my-5">
+      <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
+      <div className="dividerzz"></div>
+      <Carousel>
+        <Carousel.Item>
+          <Card className='Choose-Cardstesti testimonialWidth'>
+            <Card.Body>
+              <p className="card-text">"I am writing this letter as a humble note of appreciation for the outstanding service of Manuscriptedit.com. The ability to provide the resolution quickly exceeded my expectations. I want to take the time to acknowledge your contribution to my recent works."</p>
+              <div className="d-flex justify-content-start">
+                <Card.Img
+                  variant="top"
+                  src={testi4}
+                  className="rounded-circle mr-3"
+                  style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                />
+                <div style={{paddingLeft:'1rem'}}>
+                  <Card.Title>Salma Aldallal</Card.Title>
+                  <Card.Text></Card.Text>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Card className='Choose-Cardstesti testimonialWidth'>
+            <Card.Body>
+              <p className="card-text">"We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."</p>
+              <div className="d-flex justify-content-start">
+                <Card.Img
+                  variant="top"
+                  src={testi1}
+                  className="rounded-circle mr-3"
+                  style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                />
+                <div style={{paddingLeft:'1rem'}}>
+                  <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
+                  <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Card className='Choose-Cardstesti testimonialWidth'>
+            <Card.Body>
+              <p className="card-text">"At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me..."</p>
+              <div className="d-flex justify-content-start">
+                <Card.Img
+                  variant="top"
+                  src={testi2}
+                  className="rounded-circle mr-3"
+                  style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                />
+                <div style={{paddingLeft:'1rem'}}>
+                  <Card.Title>Seerwan O. Hasan</Card.Title>
+                  <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Card className='Choose-Cardstesti testimonialWidth'>
+            <Card.Body>
+              <p className="card-text">"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that I am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</p>
+              <div className="d-flex justify-content-start">
+                <Card.Img
+                  variant="top"
+                  src={testi3}
+                  className="rounded-circle mr-3"
+                  style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                  
+                />
+                <div style={{paddingLeft:'1rem'}}>
+                  <Card.Title>Dr. Laref Nora</Card.Title>
+                  <Card.Text></Card.Text>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Carousel.Item>
+      </Carousel>
+    </Container>
+    {/* -----------------------------new code */}
+
+
+
+
+
+
+
+
 
 
 
       {/* Latest News section here */}
-
       <div className='Choose-Card-Main'>
+      <Container>
+        <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
+        <div className="dividerzz"></div>
+        <Row>
+          <Col md={4}>
+            <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+              <Card.Img variant="top" src={lat1} />
+              <Card.Body>
+                <Card.Text>19 Mar, 2024</Card.Text>
+                <Card.Title>How to Publish Research Papers in Highly Indexed Journals?</Card.Title>
+                <Card.Text>Continue</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+              <Card.Img variant="top" src={lat2} />
+              <Card.Body>
+                <Card.Text>18 Mar, 2024</Card.Text>
+                <Card.Title>Importance Of Quality Content In SCOPUS</Card.Title>
+                <Card.Text>Continue</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+              <Card.Img variant="top" src={lat3} />
+              <Card.Body>
+                <Card.Text>13 Mar, 2024</Card.Text>
+                <Card.Title>What Are The Most Popular Reasons Editors Usually Reject Your Paper For?</Card.Title>
+                <Card.Text>Continue</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+
+      {/* <div className='Choose-Card-Main'>
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
         <div className="dividerzz"></div>
         <div className='Choose-Card'>
-          {/* Card 1 here */}
           <Card className='Choose-Cardslat' style={{ width: '25rem' }}>
             <Card.Img variant="top" src={lat1} />
             <Card.Body>
@@ -255,7 +404,6 @@ const Home = () => {
               <Card.Text>Continue</Card.Text>
             </Card.Body>
           </Card>
-          {/* Card 2 here */}
           <Card className='Choose-Cardslat' style={{ width: '25rem' }}>
             <Card.Img variant="top" src={lat2} />
             <Card.Body>
@@ -264,7 +412,6 @@ const Home = () => {
               <Card.Text>Continue</Card.Text>
             </Card.Body>
           </Card>
-          {/* Card 3 here */}
           <Card className='Choose-Cardslat' style={{ width: '25rem' }}>
             <Card.Img variant="top" src={lat3} />
             <Card.Body>
@@ -274,17 +421,38 @@ const Home = () => {
             </Card.Body>
           </Card>
         </div>
-      </div>
+      </div> */}
 
 
 
       {/* This is the starting of Our Partners Section */}
       <div className='partnergap'>
-      <h2 className='ContentHead'>Our Partners</h2>
-      <div className="dividerzz"></div>
+      <Container>
+        <h2 className='ContentHead'>Our Partners</h2>
+        <div className="dividerzz"></div>
         <Swiper
           spaceBetween={10}
-          // centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          slidesPerView={5}
+          className="mySwiper"
+        >
+          <SwiperSlide><img src={partner1} alt="Partner" className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner2} alt="Partner" className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner3} alt="Partner" className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner4} alt="Partner" className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner5} alt="Partner" className="img-fluid" /></SwiperSlide>
+          <SwiperSlide><img src={partner1} alt="Partner" className="img-fluid" /></SwiperSlide>
+        </Swiper>
+      </Container>
+    </div>
+      <div className='partnergap'>
+        <h2 className='ContentHead'>Our Partners</h2>
+        <div className="dividerzz"></div>
+        <Swiper
+          spaceBetween={10}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,

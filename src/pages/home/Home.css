@@ -1,135 +1,25 @@
+.topBanner {
+    /* /* display: block;
+    justify-content: center;
+    height: auto; */
+    padding: 1rem; 
+    background-color: #c6ddef;
+    
+}
+.Content-Para{
+    padding-top: 1rem;
+}
+.aboutus{
+    padding: 1rem; 
+}
+
 .allHome{
     display: flex;
     flex-direction: column;
 }
 
-@media (min-width: 1400px) {
-    .topBanner {
-        display: flex;
-        justify-content: space-between;
-        background-color: #c6ddef;
-        height: auto;
-        padding: 5rem;
-        padding-left: 0;
-    }
-    .aboutus {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        height: auto;
-        padding: 5rem;
-        padding-left: 0;
-        /* padding-left: 3rem; */
-    }
-
-    .ContentHead {
-        font-weight: 700;
-        font-size: 48px;
-        margin-bottom: 2rem;
-        width: 80%;
-
-    }
-
-    .Content-Para {
-        font-weight: 100;
-        font-size: 20.5px;
-        margin-bottom: 2rem;
-        width: 80%;
-    }
-
-    .content {
-        padding-left: 3rem;
-        width: 50%;
-        justify-content: center;
-        /* padding: 10rem; */
-    }
-
-    .image {
-        width: 50%;
-        justify-content: center;
-
-    }
-}
-
-@media (max-width: 1400px) {
-    .topBanner {
-        display: block;
-        justify-content: center;
-        background-color: #c6ddef;
-        height: auto;
-        /* padding: 5rem; */
-    }
-
-    .ContentHead {
-        font-weight: 700;
-        font-size: 48px;
-        margin-bottom: 2rem;
-        /* width: 80%; */
-
-    }
-
-    .Content-Para {
-        font-weight: 100;
-        font-size: 20.5px;
-        margin-bottom: 2rem;
-        /* width: 80%; */
-    }
-
-    .content {
-        padding-left: 3rem;
-        width: 100%;
-        justify-content: center;
-        /* padding: 10rem; */
-    }
-
-    .image {
-        display: block;
-        width: 70%;
-        justify-content: space-around;
-        padding: 3rem;
-
-    }
-}
-
-
-@media (max-width: 576px) {
-    .topBanner {
-        display: block;
-        justify-content: center;
-        background-color: #c6ddef;
-        height: auto;
-        padding: 5rem;
-    }
-
-    .ContentHead {
-        font-weight: 700;
-        font-size: 48px;
-        margin-bottom: 2rem;
-        /* width: 80%; */
-
-    }
-
-    .Content-Para {
-        font-weight: 100;
-        font-size: 20.5px;
-        margin-bottom: 2rem;
-        /* width: 80%; */
-    }
-
-    .content {
-        padding-left: 3rem;
-        width: 100%;
-        justify-content: center;
-        /* padding: 10rem; */
-    }
-
-    .image {
-        display: block;
-        width: 70%;
-        justify-content: space-around;
-        padding: 3rem;
-
-    }
+.image {
+    padding-top: 1rem;
 }
 
 .testimonialWidth{
@@ -365,4 +255,5 @@ justify-content: space-evenly;
     font-weight: 900;
     font-style: normal;
   }
+  /* ------------------------------Adding new CSS */
   
