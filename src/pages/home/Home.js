@@ -34,11 +34,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import SlotCounter from 'react-slot-counter';
+import { ScrollingAnimatedCounter } from "scrolling-animated-counter";
 
 
 
 const Home = () => {
+
+
 
 
   const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -74,6 +76,7 @@ const Home = () => {
             <Col md={6}>
               <div className="content">
                 <h2 className='ContentHead'>About Us</h2>
+                <div className="dividerzz"></div>
                 <p className='Content-Para'>Reseapro® Scientific Services (P) Limited is a leading research service-based
                   company providing customized and on-demand scientific solutions and expertise
                   worldwide. </p><p>Reseapro® is a company limited by shares, founded according to the Companies Act 1956 and incorporated in February 2009…..</p>
@@ -137,6 +140,31 @@ const Home = () => {
           </Row>
         </Container>
       </div>
+
+       {/* ........................................................................................................................Kana aluo karichu ame */}
+
+      <Container className='Counter'>
+        <div className='contCounter'>
+          <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
+          <div className="dividerzz1"></div>
+          <p className='Counter-Text'>Successfull Projects</p>
+        </div>
+        <div className='contCounter'>
+          <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
+          <div className="dividerzz1"></div>
+          <p className='Counter-Text'>Experts</p>
+        </div>
+        <div className='contCounter'>
+          <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
+          <div className="dividerzz1"></div>
+          <p className='Counter-Text'>Countries</p>
+        </div>
+        <div className='contCounter'>
+          <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
+          <div className="dividerzz1"></div>
+          <p className='Counter-Text'>Clients</p>
+        </div>
+      </Container>
 
 
       {/* ........................................................................................................................Testimonial Section */}
@@ -391,8 +419,6 @@ const Home = () => {
           
         )}
       </Container>
-
-      
     </div>
   );
 }

@@ -7,9 +7,6 @@
     
 }
 
-.my-5{
-   align-items: center;
-}
 .Content-Para{
     padding-top: 1rem;
 }
@@ -101,6 +98,13 @@ width: 100%;
     height: 5px;
     margin-top: 1rem; /* Adjust as needed for spacing */
     margin-bottom: 2rem;
+  }
+  
+.dividerzz1 {
+    background-color: #48C7EC;
+    width: 5rem;
+    height: 2px;
+    margin-bottom: 1rem;
   }
 
 
@@ -262,4 +266,46 @@ justify-content: space-evenly;
   /* ------------------------------Adding new CSS */
 
   
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
   
+  .slotCounterAnimation {
+    animation: slideInFromRight 0.5s ease-in-out;
+  }
+
+  .Counter{
+    background-color: #c6dcef;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Counter span{
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .contCounter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c6dcef;
+    text-align: center;
+    color: #1e75bc;
+    padding-bottom: 1rem;
+  }
+
+  .contCounter p{
+    padding: 0;
+    margin: 0;
+  }
+
+  .Counter-Text{
+    color: #1e75bc;
+    font-size: 1.5rem;
+  }
