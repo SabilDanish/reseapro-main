@@ -58,7 +58,7 @@ const Home = ({loading}) => {
             company providing customized and on-demand scientific solutions and expertise
             worldwide.</p>
           {/* <button className="custom-button">KNOW MORE</button> */}
-          <BannerButtons title={"KNOW MORE"} />
+          <BannerButtons title={"KNOW MORE"} path={"/about"}/>
         </div>
         <div className="image"><img src={topban} /></div>
       </div>
@@ -76,7 +76,7 @@ const Home = ({loading}) => {
           <p className='Content-Para'>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
           <p className='Content-Para'>Reseapro® is a company limited by shares, founded according to the Companies Act
             1956 and incorporated in February 2009…..</p>
-          <BannerButtons title={"KNOW MORE"} />
+          <BannerButtons title={"KNOW MORE"} path={"/blogs"}/>
         </div>
         <div className="image"><img src={about} /></div>
       </div>
@@ -98,7 +98,7 @@ const Home = ({loading}) => {
                 communities we serve.
               </Card.Text>
             </Card.Body>
-            <BannerButtons title={"KNOW MORE"} />
+            <BannerButtons title={"KNOW MORE"} path={"/about"}/>
           </Card>
           {/* Card 2 here */}
           <Card className='Choose-Cards' style={{ width: '25rem' }}>
@@ -110,7 +110,7 @@ const Home = ({loading}) => {
                 other resources.
               </Card.Text>
             </Card.Body>
-            <BannerButtons title={"KNOW MORE"} />
+            <BannerButtons title={"KNOW MORE"} path={"/about"}/>
           </Card>
           {/* Card 3 here */}
           <Card className='Choose-Cards' style={{ width: '25rem' }}>
@@ -122,7 +122,7 @@ const Home = ({loading}) => {
                 setup, and administration.
               </Card.Text>
             </Card.Body>
-            <BannerButtons title={"KNOW MORE"} />
+            <BannerButtons title={"KNOW MORE"} path={"/about"}/>
           </Card>
         </div>
       </div>
