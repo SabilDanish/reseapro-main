@@ -202,8 +202,17 @@
 
 .dropdown-content1 .dropdown-link{
      border-bottom: 1px solid #9cc7db ;
+     font-size: 16px;
 
 }
 .dropdown-content1{
     margin-top: 11px;
+}
+
+.dropdown-content .dropdown-link{
+    border-bottom: 1px solid #9cc7db ;
+    font-size: 16px;
+}
+.dropdown-content .dropdown-link:hover{
+   background-color: #4cacff;
 }

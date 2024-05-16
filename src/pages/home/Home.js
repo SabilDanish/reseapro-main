@@ -34,6 +34,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import BannerButtons from '../../components/buttons/BannerButtons';
 import Loader from '../../components/loader/Loader';
+import Whatwedo from '../../components/whatWeDo/Whatwedo';
 
 
 
@@ -126,6 +127,10 @@ const Home = ({loading}) => {
           </Card>
         </div>
       </div>
+
+
+      {/* what we do  */}
+      <Whatwedo/>
 
 
 

@@ -30,8 +30,13 @@ const Navbar = () => {
           {/* Dropdown Content */}
           {isDropdownOpen && (
             <div className="dropdown-content">
-              <NavLink to="/service1" className="dropdown-link" activeClassName="active">Service 1</NavLink>
-              <NavLink to="/service2" className="dropdown-link" activeClassName="active">Service 2</NavLink>
+              <NavLink to="/service1" className="dropdown-link" activeClassName="active">View all Services</NavLink>
+              <NavLink to="/service2" className="dropdown-link" activeClassName="active">Researcher | Author</NavLink>
+              <NavLink to="/service3" className="dropdown-link" activeClassName="active">Journal | Publisher</NavLink>
+              <NavLink to="/service4" className="dropdown-link" activeClassName="active">Corporation | Institute</NavLink>
+              <NavLink to="/service5" className="dropdown-link" activeClassName="active">Lab | Innovator</NavLink>
+              <NavLink to="/service6" className="dropdown-link" activeClassName="active">E-Learning | Education</NavLink>
+              <NavLink to="/service7" className="dropdown-link" activeClassName="active">Webinars | Conferences</NavLink>
               {/* Add more services as needed */}
             </div>
           )}
@@ -59,8 +64,13 @@ const Navbar = () => {
           {/* Dropdown Content */}
           {isDropdownOpen && (
             <div className="dropdown-content1">
-              <NavLink to="/service1" className="dropdown-link" activeClassName="active">Service 1</NavLink>
-              <NavLink to="/service2" className="dropdown-link" activeClassName="active">Service 2</NavLink>
+              <NavLink to="/service1" className="dropdown-link" activeClassName="active">All Services</NavLink>
+              <NavLink to="/service2" className="dropdown-link" activeClassName="active">Researcher | Author</NavLink>
+              <NavLink to="/service3" className="dropdown-link" activeClassName="active">Journal | Publisher</NavLink>
+              <NavLink to="/service4" className="dropdown-link" activeClassName="active">Corporation | Institute</NavLink>
+              <NavLink to="/service5" className="dropdown-link" activeClassName="active">Lab | Innovator</NavLink>
+              <NavLink to="/service6" className="dropdown-link" activeClassName="active">E-Learning | Education</NavLink>
+              <NavLink to="/service7" className="dropdown-link" activeClassName="active">Webinars | Conferences</NavLink>
               {/* Add more services as needed */}
             </div>
           )}

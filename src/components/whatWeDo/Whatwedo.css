@@ -1,0 +1,113 @@
+/* Necessary CSS */
+
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font family */
+body {
+    font-family: "Sofia", sans-serif;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Row styles */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Column styles */
+.col-md-12, .col-sm-12, .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-lg-4 {
+    width: 33.3333333333%;
+    float: left;
+}
+
+/* Left and right font styles */
+.left_right_font {
+    text-align: justify;
+    padding-top: 50px;
+}
+
+/* Centered content styles */
+.text_face_ceneter {
+    text-align: center;
+}
+
+/* Padding styles */
+.paddding_right_50 {
+    padding-right: 50px;
+}
+
+.paddding_left_50 {
+    padding-left: 50px;
+}
+
+.p-t-40 {
+    padding-top: 40px;
+}
+
+.paddonig {
+    padding: 0;
+}
+
+/* Image styles */
+.round_circle_box {
+    position: relative;
+}
+
+.round_circle_box img {
+    width: 100%;
+}
+
+/* Animation styles */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:768px){
+    .MainImg{
+        display: none;
+    }
+    .Padding0{
+        padding-left:0px !important;
+        text-align: start !important;
+        width: 100%;
+    }
+}
+
+
+.centroid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paddonig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
