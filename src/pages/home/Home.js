@@ -145,7 +145,7 @@ const Home = () => {
 
       {/* ........................................................................................................................Counter up Section */}
 
-
+      
       <Container className="my-5">
         {isDesktop ? (
           <Container className='Counter'>
