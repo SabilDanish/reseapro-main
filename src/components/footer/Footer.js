@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Container } from 'react-bootstrap';
 import logof from "../../utils/images/MainLogo.png";
 import { Link } from 'react-router-dom';
 import wave from '../../utils/images/wave.png'
