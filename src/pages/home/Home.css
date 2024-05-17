@@ -1,3 +1,20 @@
+.topBanner {
+    /* /* display: block;
+    justify-content: center;
+    height: auto; */
+    padding: 1rem;
+    background-color: #c6ddef;
+
+}
+
+.Content-Para {
+    padding-top: 1rem;
+}
+
+.aboutus {
+    padding: 1rem;
+}
+
 .allHome {
     display: flex;
     flex-direction: column;
@@ -50,46 +67,12 @@
         justify-content: center;
 
     }
+.image {
+    padding-top: 1rem;
 }
 
-@media (max-width: 1400px) {
-    .topBanner {
-        display: block;
-        justify-content: center;
-        background-color: #c6ddef;
-        height: auto;
-        /* padding: 5rem; */
-    }
-
-    .ContentHead {
-        font-weight: 700;
-        font-size: 48px;
-        margin-bottom: 2rem;
-        /* width: 80%; */
-
-    }
-
-    .Content-Para {
-        font-weight: 100;
-        font-size: 20.5px;
-        margin-bottom: 2rem;
-        /* width: 80%; */
-    }
-
-    .content {
-        padding-left: 3rem;
-        width: 100%;
-        justify-content: center;
-        /* padding: 10rem; */
-    }
-
-    .image {
-        display: block;
-        width: 70%;
-        justify-content: space-around;
-        padding: 3rem;
-
-    }
+.testimonialWidth {
+    width: 100%;
 }
 
 
@@ -136,6 +119,31 @@
 .testimonialWidth {
     width: 100%;
     display: none;
+}
+
+.custom-button {
+    border: 3px solid #016DCA;
+    /* Border width and color */
+    border-radius: 10px;
+    /* Border radius */
+    padding: 5px 50px;
+    /* Adjust padding as needed */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    background-color: white;
+    /* Transparent background */
+    color: #016DCA;
+    /* Text color */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+
+}
+
+.custom-button:hover {
+    background-color: #016DCA;
+    /* Change background color on hover */
+    color: #fff;
+    /* Change text color on hover */
 }
 
 .Choose-Card {
@@ -189,6 +197,13 @@
     margin-bottom: 2rem;
 }
 
+.dividerzz1 {
+    background-color: #48C7EC;
+    width: 5rem;
+    height: 2px;
+    margin-bottom: 1rem;
+}
+
 
 .ContentHead {
     margin-bottom: 0;
@@ -236,6 +251,7 @@ testim2 {
 }
 
 .img-fluid {
+    padding-left: 1rem;
     justify-content: space-evenly;
 }
 
@@ -249,6 +265,7 @@ testim2 {
     height: auto;
     padding: 5rem;
     padding-left: 3rem;
+    padding: 4rem;
 }
 
 .testimonialSwiper {
@@ -330,4 +347,73 @@ testim2 {
         max-width: 100%;
         margin-bottom: 20px;
     }
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* ------------------------------Adding new CSS */
+
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slotCounterAnimation {
+    animation: slideInFromRight 0.5s ease-in-out;
+}
+
+.Counter {
+    background-color: #c6dcef;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Counter span {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.contCounter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c6dcef;
+    text-align: center;
+    color: #1e75bc;
+    padding-bottom: 1rem;
+}
+
+.contCounter p {
+    padding: 0;
+    margin: 0;
+}
+
+.Counter-Text {
+    color: #1e75bc;
+    font-size: 1.5rem;
+}
+.contCounterm{
+    width:100%;
 }
