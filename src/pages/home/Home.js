@@ -39,14 +39,14 @@ import Loader from '../../components/loader/Loader';
 
 
 
-const Home = ({loading}) => {
-  if(loading){
-    return (
-      <div className='Loader'>
-        <Loader />
-      </div>
-    )
-  }
+// const Home = ({loading}) => {
+//   if(loading){
+//     return (
+//       <div className='Loader'>
+//         <Loader />
+//       </div>
+//     )
+//   }
 import { ScrollingAnimatedCounter } from "scrolling-animated-counter";
 
 
