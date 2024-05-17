@@ -35,6 +35,7 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { ScrollingAnimatedCounter } from "scrolling-animated-counter";
+import Whatwedo from '../../components/whatWeDo/Whatwedo';
 
 
 
@@ -102,7 +103,7 @@ const Home = () => {
           <Row>
             <Col md={4}>
               <Card className='Choose-Cards' style={{ width: '100%' }}>
-                <Card.Img variant="top" style={{ width: '8rem' }} src={Card1} />
+                <Card.Img variant="top" style={{ width: '8rem', padding:'0'}} src={Card1} />
                 <Card.Body>
                   <Card.Title>Time Tested Expertise</Card.Title>
                   <Card.Text>
@@ -173,23 +174,23 @@ const Home = () => {
         ) : (
           <Container className='Counter'>
             <div>
-              <div className='contCounter'>
+              <div className='contCounterMob'>
                 <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
                 <div className="dividerzz1"></div>
                 <p className='Counter-Text'>Successfull Projects</p>
-              </div>
-              <div className='contCounter'>
+                </div>
+              <div className='contCounterMob'>
                 <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
                 <div className="dividerzz1"></div>
                 <p className='Counter-Text'>Experts</p>
               </div></div>
             <div>
-              <div className='contCounter'>
+              <div className='contCounterMob'>
                 <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
                 <div className="dividerzz1"></div>
-                <p className='Counter-Text'>Countries</p>
+                <p className='Counter-Text'>Countries <br /></p>
               </div>
-              <div className='contCounter'>
+              <div className='contCounterMob'>
                 <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
                 <div className="dividerzz1"></div>
                 <p className='Counter-Text'>Clients</p>
@@ -197,13 +198,16 @@ const Home = () => {
           </Container>
         )}
       </Container>
+      {/* ........................................................................................................................Whatwedo Section */}
+
+      <Whatwedo />
       {/* ........................................................................................................................Testimonial Section */}
       <Container className="my-5">
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
         <div className="dividerzz"></div>
         {isDesktop ? (
-          <Carousel controls={false}>
-            <Carousel.Item>
+          <Carousel controls={false} indicators={false}>
+          <Carousel.Item>
               <div className="d-flex justify-content-around">
                 <Card className='Choose-Cardstesti testimonialWidth mx-2'>
                   <Card.Body>
@@ -293,7 +297,7 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div>
+                    <div style={{ paddingLeft: '1rem' }}>
                       <Card.Title>Salma Aldallal</Card.Title>
                       <Card.Text></Card.Text>
                     </div>
@@ -312,8 +316,8 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div>
-                      <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
+<div style={{ paddingLeft: '1rem' }}> 
+                     <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
                       <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
                     </div>
                   </div>
@@ -331,7 +335,7 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div>
+<div style={{ paddingLeft: '1rem' }}> 
                       <Card.Title>Seerwan O. Hasan</Card.Title>
                       <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
                     </div>
@@ -350,7 +354,7 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div>
+<div style={{ paddingLeft: '1rem' }}> 
                       <Card.Title>Dr. Laref Nora</Card.Title>
                       <Card.Text></Card.Text>
                     </div>
@@ -407,7 +411,7 @@ const Home = () => {
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Our Partners</h2>
         <div className="dividerzz"></div>
         {isDesktop ? (
-          <Carousel controls={false}>
+          <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
                 <img src={partner1} alt="Partner" className="img-fluid" />
@@ -432,18 +436,26 @@ const Home = () => {
             <Carousel.Item>
               <div className="d-flex justify-content-around">
                 <img src={partner1} alt="Partner" className="img-fluid" />
+
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="d-flex justify-content-around">
                 <img src={partner2} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
                 <img src={partner3} alt="Partner" className="img-fluid" />
-                <img src={partner4} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-                <img src={partner3} alt="Partner" className="img-fluid" />
+              <img src={partner4} alt="Partner" className="img-fluid" />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="d-flex justify-content-around">
                 <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
