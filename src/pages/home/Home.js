@@ -23,7 +23,7 @@ import Card from 'react-bootstrap/Card';
 import Slider from 'react-slick';
 import React, { useState, useEffect } from 'react';
 import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick-theme.css'; 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useMediaQuery } from 'react-responsive';
 
@@ -46,8 +46,10 @@ const Home = () => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
 
   return (
-    // ..........................................................................................................................top banner section 
+
     <div className="allHome">
+
+{/* // ..........................................................................................................................top banner section  */}
       <div className="topBanner">
         <Container>
           <Row className="align-items-center">
@@ -141,79 +143,58 @@ const Home = () => {
         </Container>
       </div>
 
-       {/* ........................................................................................................................Kana aluo karichu ame */}
+      {/* ........................................................................................................................Counter up Section */}
 
-      {/* <Container className='Counter container-fluid'>
-        <div className='contCounter'>
-          <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
-          <div className="dividerzz1"></div>
-          <p className='Counter-Text'>Successfull Projects</p>
-        </div>
-        <div className='contCounter'>
-          <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
-          <div className="dividerzz1"></div>
-          <p className='Counter-Text'>Experts</p>
-        </div>
-        <div className='contCounter'>
-          <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
-          <div className="dividerzz1"></div>
-          <p className='Counter-Text'>Countries</p>
-        </div>
-        <div className='contCounter'>
-          <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
-          <div className="dividerzz1"></div>
-          <p className='Counter-Text'>Clients</p>
-        </div>
-      </Container> */}
-<Container className="my-5">
+
+      <Container className="my-5">
         {isDesktop ? (
-               <Container className='Counter'>
-               <div className='contCounter'>
-                 <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
-                 <div className="dividerzz1"></div>
-                 <p className='Counter-Text'>Successfull Projects</p>
-               </div>
-               <div className='contCounter'>
-                 <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
-                 <div className="dividerzz1"></div>
-                 <p className='Counter-Text'>Experts</p>
-               </div>
-               <div className='contCounter'>
-                 <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
-                 <div className="dividerzz1"></div>
-                 <p className='Counter-Text'>Countries</p>
-               </div>
-               <div className='contCounter'>
-                 <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
-                 <div className="dividerzz1"></div>
-                 <p className='Counter-Text'>Clients</p>
-               </div>
-             </Container>
+          <Container className='Counter'>
+            <div className='contCounter'>
+              <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
+              <div className="dividerzz1"></div>
+              <p className='Counter-Text'>Successfull Projects</p>
+            </div>
+            <div className='contCounter'>
+              <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
+              <div className="dividerzz1"></div>
+              <p className='Counter-Text'>Experts</p>
+            </div>
+            <div className='contCounter'>
+              <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
+              <div className="dividerzz1"></div>
+              <p className='Counter-Text'>Countries</p>
+            </div>
+            <div className='contCounter'>
+              <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
+              <div className="dividerzz1"></div>
+              <p className='Counter-Text'>Clients</p>
+            </div>
+          </Container>
         ) : (
           <Container className='Counter'>
             <div>
-          <div className='contCounter'>
-            <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
-            <div className="dividerzz1"></div>
-            <p className='Counter-Text'>Successfull Projects</p>
-          </div>
-          <div className='contCounter'>
-            <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
-            <div className="dividerzz1"></div>
-            <p className='Counter-Text'>Experts</p>
-          </div></div>
-          <div>
-          <div className='contCounter'>
-            <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
-            <div className="dividerzz1"></div>
-            <p className='Counter-Text'>Countries</p>
-          </div>
-          <div className='contCounter'>
-            <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
-            <div className="dividerzz1"></div>
-            <p className='Counter-Text'>Clients</p>
-          </div></div>
-        </Container>
+              <div className='contCounter'>
+                <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
+                <div className="dividerzz1"></div>
+                <p className='Counter-Text'>Successfull Projects</p>
+              </div>
+              <div className='contCounter'>
+                <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
+                <div className="dividerzz1"></div>
+                <p className='Counter-Text'>Experts</p>
+              </div></div>
+            <div>
+              <div className='contCounter'>
+                <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
+                <div className="dividerzz1"></div>
+                <p className='Counter-Text'>Countries</p>
+              </div>
+              <div className='contCounter'>
+                <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
+                <div className="dividerzz1"></div>
+                <p className='Counter-Text'>Clients</p>
+              </div></div>
+          </Container>
         )}
       </Container>
       {/* ........................................................................................................................Testimonial Section */}
@@ -234,7 +215,7 @@ const Home = () => {
                         className="rounded-circle mr-3"
                         style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                       />
-                                    <div style={{ paddingLeft: '1rem' }}>
+                      <div style={{ paddingLeft: '1rem' }}>
                         <Card.Title>Salma Aldallal</Card.Title>
                         <Card.Text></Card.Text>
                       </div>
@@ -251,7 +232,7 @@ const Home = () => {
                         className="rounded-circle mr-3"
                         style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                       />
-                                    <div style={{ paddingLeft: '1rem' }}>
+                      <div style={{ paddingLeft: '1rem' }}>
                         <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
                         <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
                       </div>
@@ -272,7 +253,7 @@ const Home = () => {
                         className="rounded-circle mr-3"
                         style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                       />
-                                    <div style={{ paddingLeft: '1rem' }}>   
+                      <div style={{ paddingLeft: '1rem' }}>
                         <Card.Title>Seerwan O. Hasan</Card.Title>
                         <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
                       </div>
@@ -289,7 +270,7 @@ const Home = () => {
                         className="rounded-circle mr-3"
                         style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                       />
-                                    <div style={{ paddingLeft: '1rem' }}>
+                      <div style={{ paddingLeft: '1rem' }}>
                         <Card.Title>Dr. Laref Nora</Card.Title>
                         <Card.Text></Card.Text>
                       </div>
@@ -429,20 +410,20 @@ const Home = () => {
           <Carousel controls={false}>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner1} alt="Partner" className="img-fluid" />
-              <img src={partner2} alt="Partner" className="img-fluid" />
-              <img src={partner3} alt="Partner" className="img-fluid" />
-              <img src={partner4} alt="Partner" className="img-fluid" />
-              <img src={partner5} alt="Partner" className="img-fluid" />
+                <img src={partner1} alt="Partner" className="img-fluid" />
+                <img src={partner2} alt="Partner" className="img-fluid" />
+                <img src={partner3} alt="Partner" className="img-fluid" />
+                <img src={partner4} alt="Partner" className="img-fluid" />
+                <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner3} alt="Partner" className="img-fluid" />
-              <img src={partner4} alt="Partner" className="img-fluid" />
-              <img src={partner1} alt="Partner" className="img-fluid" />
-              <img src={partner2} alt="Partner" className="img-fluid" />
-              <img src={partner5} alt="Partner" className="img-fluid" />
+                <img src={partner3} alt="Partner" className="img-fluid" />
+                <img src={partner4} alt="Partner" className="img-fluid" />
+                <img src={partner1} alt="Partner" className="img-fluid" />
+                <img src={partner2} alt="Partner" className="img-fluid" />
+                <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
           </Carousel>
@@ -450,24 +431,24 @@ const Home = () => {
           <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner1} alt="Partner" className="img-fluid" />
-              <img src={partner2} alt="Partner" className="img-fluid" />
+                <img src={partner1} alt="Partner" className="img-fluid" />
+                <img src={partner2} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner3} alt="Partner" className="img-fluid" />
-              <img src={partner4} alt="Partner" className="img-fluid" />
+                <img src={partner3} alt="Partner" className="img-fluid" />
+                <img src={partner4} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner3} alt="Partner" className="img-fluid" />
-              <img src={partner5} alt="Partner" className="img-fluid" />
+                <img src={partner3} alt="Partner" className="img-fluid" />
+                <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
           </Carousel>
-          
+
         )}
       </Container>
     </div>
