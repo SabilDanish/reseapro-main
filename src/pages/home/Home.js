@@ -20,11 +20,7 @@ import partner3 from "../../utils/images/Partner/natural-products.png";
 import partner4 from "../../utils/images/Partner/partner1.png";
 import partner5 from "../../utils/images/Partner/pharmacognosy-2018.png";
 import Card from 'react-bootstrap/Card';
-import Slider from 'react-slick';
 import React, { useState, useEffect } from 'react';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { useMediaQuery } from 'react-responsive';
 
 
@@ -33,14 +29,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import BannerButtons from '../../components/buttons/BannerButtons';
-import Loader from '../../components/loader/Loader';
 
 
 
 import { ScrollingAnimatedCounter } from "scrolling-animated-counter";
-import Whatwedo from '../../components/whatWeDo/Whatwedo';
 
 
 
@@ -203,12 +196,8 @@ const Home = () => {
           </Container>
         )}
       </Container>
-      {/* ........................................................................................................................Whatwedo Section */}
 
-      <Whatwedo />
-      {/* ........................................................................................................................Testimonial Section */}
-      {/* what we do  */}
-      <Whatwedo />
+      
 
 
 
