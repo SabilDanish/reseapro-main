@@ -10,6 +10,7 @@ import Footer from './components/footer/Footer';
 import NotFoundPage from './pages/NotFoundPage';
 import { useEffect, useState } from 'react';
 import SocialMedia from './components/socialMedia/SocialMedia';
+import Test from './pages/home/Test';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,6 +24,7 @@ function App() {
   return (
 
       <div className="App">
+        {/* <Test/> */}
         <Navbar />
         <Routes>
           <Route path='/' element={<Home loading={loading} />} />

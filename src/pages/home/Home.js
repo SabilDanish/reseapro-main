@@ -36,6 +36,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import BannerButtons from '../../components/buttons/BannerButtons';
 import Loader from '../../components/loader/Loader';
+import Whatwedo from '../../components/whatWeDo/Whatwedo';
 
 
 
@@ -70,7 +71,7 @@ const Home = () => {
                 <p className='Content-Para'>Reseapro® Scientific Services (P) Limited is a leading research service-based
                   company providing customized and on-demand scientific solutions and expertise
                   worldwide.</p>
-                  <BannerButtons title={"KNOW MORE"} path={"/about"}/>
+                <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </div>
             </Col>
             <Col md={6}>
@@ -93,7 +94,7 @@ const Home = () => {
                 <p className='Content-Para'>Reseapro® Scientific Services (P) Limited is a leading research service-based
                   company providing customized and on-demand scientific solutions and expertise
                   worldwide. </p><p>Reseapro® is a company limited by shares, founded according to the Companies Act 1956 and incorporated in February 2009…..</p>
-                  <BannerButtons title={"KNOW MORE"} path={"/about"}/>
+                <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </div>
             </Col>
             <Col md={6}>
@@ -121,7 +122,7 @@ const Home = () => {
                     communities we serve.
                   </Card.Text>
                 </Card.Body>
-                <BannerButtons title={"KNOW MORE"} path={"/about"}/>
+                <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </Card>
             </Col>
             <Col md={4}>
@@ -134,7 +135,7 @@ const Home = () => {
                     other resources.
                   </Card.Text>
                 </Card.Body>
-                <BannerButtons title={"KNOW MORE"} path={"/about"}/>
+                <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </Card>
             </Col>
             <Col md={4}>
@@ -147,14 +148,14 @@ const Home = () => {
                     setup, and administration.
                   </Card.Text>
                 </Card.Body>
-                <BannerButtons title={"KNOW MORE"} path={"/about"}/>
+                <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </Card>
             </Col>
           </Row>
         </Container>
       </div>
 
-       {/* ........................................................................................................................Kana aluo karichu ame */}
+      {/* ........................................................................................................................Kana aluo karichu ame */}
 
       {/* <Container className='Counter container-fluid'>
         <div className='contCounter'>
@@ -178,66 +179,151 @@ const Home = () => {
           <p className='Counter-Text'>Clients</p>
         </div>
       </Container> */}
-<Container className="my-5">
+      <Container className="my-5">
         {isDesktop ? (
-               <Container className='Counter'>
-               <div className='contCounter'>
-                 <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
-                 <div className="dividerzz1"></div>
-                 <p className='Counter-Text'>Successfull Projects</p>
-               </div>
-               <div className='contCounter'>
-                 <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
-                 <div className="dividerzz1"></div>
-                 <p className='Counter-Text'>Experts</p>
-               </div>
-               <div className='contCounter'>
-                 <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
-                 <div className="dividerzz1"></div>
-                 <p className='Counter-Text'>Countries</p>
-               </div>
-               <div className='contCounter'>
-                 <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
-                 <div className="dividerzz1"></div>
-                 <p className='Counter-Text'>Clients</p>
-               </div>
-             </Container>
+          <Container className='Counter'>
+            <div className='contCounter'>
+              <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
+              <div className="dividerzz1"></div>
+              <p className='Counter-Text'>Successfull Projects</p>
+            </div>
+            <div className='contCounter'>
+              <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
+              <div className="dividerzz1"></div>
+              <p className='Counter-Text'>Experts</p>
+            </div>
+            <div className='contCounter'>
+              <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
+              <div className="dividerzz1"></div>
+              <p className='Counter-Text'>Countries</p>
+            </div>
+            <div className='contCounter'>
+              <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
+              <div className="dividerzz1"></div>
+              <p className='Counter-Text'>Clients</p>
+            </div>
+          </Container>
         ) : (
           <Container className='Counter'>
             <div>
-          <div className='contCounter'>
-            <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
-            <div className="dividerzz1"></div>
-            <p className='Counter-Text'>Successfull Projects</p>
-          </div>
-          <div className='contCounter'>
-            <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
-            <div className="dividerzz1"></div>
-            <p className='Counter-Text'>Experts</p>
-          </div></div>
-          <div>
-          <div className='contCounter'>
-            <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
-            <div className="dividerzz1"></div>
-            <p className='Counter-Text'>Countries</p>
-          </div>
-          <div className='contCounter'>
-            <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
-            <div className="dividerzz1"></div>
-            <p className='Counter-Text'>Clients</p>
-          </div></div>
-        </Container>
+              <div className='contCounter'>
+                <p><ScrollingAnimatedCounter targetValue={7066} threshold={0.5} /><span>+</span></p>
+                <div className="dividerzz1"></div>
+                <p className='Counter-Text'>Successfull Projects</p>
+              </div>
+              <div className='contCounter'>
+                <p><ScrollingAnimatedCounter targetValue={530} threshold={0.5} /><span>+</span></p>
+                <div className="dividerzz1"></div>
+                <p className='Counter-Text'>Experts</p>
+              </div></div>
+            <div>
+              <div className='contCounter'>
+                <p><ScrollingAnimatedCounter targetValue={127} threshold={0.5} /><span>+</span></p>
+                <div className="dividerzz1"></div>
+                <p className='Counter-Text'>Countries</p>
+              </div>
+              <div className='contCounter'>
+                <p><ScrollingAnimatedCounter targetValue={4946} threshold={0.5} /><span>+</span></p>
+                <div className="dividerzz1"></div>
+                <p className='Counter-Text'>Clients</p>
+              </div></div>
+          </Container>
         )}
       </Container>
       {/* ........................................................................................................................Testimonial Section */}
+      {/* what we do  */}
+      <Whatwedo />
+
+
+
+      {/* Testimonial Section Starts here */}
       <Container className="my-5">
-        <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
-        <div className="dividerzz"></div>
-        {isDesktop ? (
-          <Carousel controls={false}>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+        <div className='Choose-Card-Main backColor'>
+          <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
+          <div className="dividerzz"></div>
+          {isDesktop ? (
+            <Carousel controls={false}>
+              <Carousel.Item>
+                <div className="d-flex justify-content-around">
+                  <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                    <Card.Body>
+                      <p className="card-text">"I am writing this letter as a humble note of appreciation for the outstanding service of Manuscriptedit.com. The ability to provide the resolution quickly exceeded my expectations. I want to take the time to acknowledge your contribution to my recent works."</p>
+                      <div className="d-flex justify-content-start">
+                        <Card.Img
+                          variant="top"
+                          src={testi4}
+                          className="rounded-circle mr-3"
+                          style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                        />
+                        <div style={{ paddingLeft: '1rem' }}>
+                          <Card.Title>Salma Aldallal</Card.Title>
+                          <Card.Text></Card.Text>
+                        </div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                  <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                    <Card.Body>
+                      <p className="card-text">"We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."</p>
+                      <div className="d-flex justify-content-start">
+                        <Card.Img
+                          variant="top"
+                          src={testi1}
+                          className="rounded-circle mr-3"
+                          style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                        />
+                        <div style={{ paddingLeft: '1rem' }}>
+                          <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
+                          <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
+                        </div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="d-flex justify-content-around">
+                  <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                    <Card.Body>
+                      <p className="card-text">"At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me..."</p>
+                      <div className="d-flex justify-content-start">
+                        <Card.Img
+                          variant="top"
+                          src={testi2}
+                          className="rounded-circle mr-3"
+                          style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                        />
+                        <div style={{ paddingLeft: '1rem' }}>
+                          <Card.Title>Seerwan O. Hasan</Card.Title>
+                          <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
+                        </div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                  <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                    <Card.Body>
+                      <p className="card-text">"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that I am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</p>
+                      <div className="d-flex justify-content-start">
+                        <Card.Img
+                          variant="top"
+                          src={testi3}
+                          className="rounded-circle mr-3"
+                          style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                        />
+                        <div style={{ paddingLeft: '1rem' }}>
+                          <Card.Title>Dr. Laref Nora</Card.Title>
+                          <Card.Text></Card.Text>
+                        </div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </Carousel.Item>
+            </Carousel>
+          ) : (
+            <Carousel controls={false} indicators={false}>
+              <Carousel.Item>
+                <Card className='Choose-Cardstesti testimonialWidth'>
                   <Card.Body>
                     <p className="card-text">"I am writing this letter as a humble note of appreciation for the outstanding service of Manuscriptedit.com. The ability to provide the resolution quickly exceeded my expectations. I want to take the time to acknowledge your contribution to my recent works."</p>
                     <div className="d-flex justify-content-start">
@@ -247,14 +333,16 @@ const Home = () => {
                         className="rounded-circle mr-3"
                         style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                       />
-                                    <div style={{ paddingLeft: '1rem' }}>
+                      <div>
                         <Card.Title>Salma Aldallal</Card.Title>
                         <Card.Text></Card.Text>
                       </div>
                     </div>
                   </Card.Body>
                 </Card>
-                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Card className='Choose-Cardstesti testimonialWidth'>
                   <Card.Body>
                     <p className="card-text">"We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."</p>
                     <div className="d-flex justify-content-start">
@@ -264,18 +352,16 @@ const Home = () => {
                         className="rounded-circle mr-3"
                         style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                       />
-                                    <div style={{ paddingLeft: '1rem' }}>
+                      <div>
                         <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
                         <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
                       </div>
                     </div>
                   </Card.Body>
                 </Card>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Card className='Choose-Cardstesti testimonialWidth'>
                   <Card.Body>
                     <p className="card-text">"At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me..."</p>
                     <div className="d-flex justify-content-start">
@@ -285,14 +371,16 @@ const Home = () => {
                         className="rounded-circle mr-3"
                         style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                       />
-                                    <div style={{ paddingLeft: '1rem' }}>   
+                      <div>
                         <Card.Title>Seerwan O. Hasan</Card.Title>
                         <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
                       </div>
                     </div>
                   </Card.Body>
                 </Card>
-                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Card className='Choose-Cardstesti testimonialWidth'>
                   <Card.Body>
                     <p className="card-text">"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that I am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</p>
                     <div className="d-flex justify-content-start">
@@ -302,96 +390,17 @@ const Home = () => {
                         className="rounded-circle mr-3"
                         style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                       />
-                                    <div style={{ paddingLeft: '1rem' }}>
+                      <div>
                         <Card.Title>Dr. Laref Nora</Card.Title>
                         <Card.Text></Card.Text>
                       </div>
                     </div>
                   </Card.Body>
                 </Card>
-              </div>
-            </Carousel.Item>
-          </Carousel>
-        ) : (
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"I am writing this letter as a humble note of appreciation for the outstanding service of Manuscriptedit.com. The ability to provide the resolution quickly exceeded my expectations. I want to take the time to acknowledge your contribution to my recent works."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi4}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div>
-                      <Card.Title>Salma Aldallal</Card.Title>
-                      <Card.Text></Card.Text>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi1}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div>
-                      <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
-                      <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me..."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi2}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div>
-                      <Card.Title>Seerwan O. Hasan</Card.Title>
-                      <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that I am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi3}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div>
-                      <Card.Title>Dr. Laref Nora</Card.Title>
-                      <Card.Text></Card.Text>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-          </Carousel>
-        )}
+              </Carousel.Item>
+            </Carousel>
+          )}
+          </div>
       </Container>
 
       {/* ......................................................................................................Latest News section here */}
@@ -442,20 +451,20 @@ const Home = () => {
           <Carousel controls={false}>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner1} alt="Partner" className="img-fluid" />
-              <img src={partner2} alt="Partner" className="img-fluid" />
-              <img src={partner3} alt="Partner" className="img-fluid" />
-              <img src={partner4} alt="Partner" className="img-fluid" />
-              <img src={partner5} alt="Partner" className="img-fluid" />
+                <img src={partner1} alt="Partner" className="img-fluid" />
+                <img src={partner2} alt="Partner" className="img-fluid" />
+                <img src={partner3} alt="Partner" className="img-fluid" />
+                <img src={partner4} alt="Partner" className="img-fluid" />
+                <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner3} alt="Partner" className="img-fluid" />
-              <img src={partner4} alt="Partner" className="img-fluid" />
-              <img src={partner1} alt="Partner" className="img-fluid" />
-              <img src={partner2} alt="Partner" className="img-fluid" />
-              <img src={partner5} alt="Partner" className="img-fluid" />
+                <img src={partner3} alt="Partner" className="img-fluid" />
+                <img src={partner4} alt="Partner" className="img-fluid" />
+                <img src={partner1} alt="Partner" className="img-fluid" />
+                <img src={partner2} alt="Partner" className="img-fluid" />
+                <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
           </Carousel>
@@ -463,24 +472,24 @@ const Home = () => {
           <Carousel controls={false} indicators={false}>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner1} alt="Partner" className="img-fluid" />
-              <img src={partner2} alt="Partner" className="img-fluid" />
+                <img src={partner1} alt="Partner" className="img-fluid" />
+                <img src={partner2} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner3} alt="Partner" className="img-fluid" />
-              <img src={partner4} alt="Partner" className="img-fluid" />
+                <img src={partner3} alt="Partner" className="img-fluid" />
+                <img src={partner4} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="d-flex justify-content-around">
-              <img src={partner3} alt="Partner" className="img-fluid" />
-              <img src={partner5} alt="Partner" className="img-fluid" />
+                <img src={partner3} alt="Partner" className="img-fluid" />
+                <img src={partner5} alt="Partner" className="img-fluid" />
               </div>
             </Carousel.Item>
           </Carousel>
-          
+
         )}
       </Container>
     </div>
