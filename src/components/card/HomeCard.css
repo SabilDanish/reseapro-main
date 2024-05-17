@@ -1,0 +1,11 @@
+.Choose-Cards {
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 45%; */
+    padding-bottom: 1rem;
+}

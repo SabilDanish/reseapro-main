@@ -1,0 +1,352 @@
+.container{
+    margin-top: 2rem;
+}
+.topBanner {
+    /* /* display: block;
+    justify-content: center;
+    height: auto; */
+    padding: 0;
+    background-color: #c6ddef;
+
+
+}
+
+.Content-Para {
+    padding-top: 1rem;
+}
+
+
+.aboutus {
+    /* padding: 1rem; */
+}
+
+.allHome {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.testimonialWidth {
+    width: 100%;
+}
+
+.custom-button {
+    border: 3px solid #016DCA;
+    /* Border width and color */
+    border-radius: 10px;
+    /* Border radius */
+    padding: 5px 50px;
+    /* Adjust padding as needed */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    background-color: white;
+    /* Transparent background */
+    color: #016DCA;
+    /* Text color */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+
+}
+
+.custom-button:hover {
+    background-color: #016DCA;
+    /* Change background color on hover */
+    color: #fff;
+    /* Change text color on hover */
+}
+
+.Choose-Card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Choose-Card-Main {
+    /* width: 100%;
+    max-width: 1200px;
+    margin-left: 10%;
+    padding: 10px; */
+    display: flex;
+    justify-content: center;
+    height: auto;
+    /* padding: 2rem; */
+    margin:0;
+    /* padding-left: 3rem; */
+}
+
+.Choose-Cards {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 45%; */
+    padding-bottom: 1rem;
+    margin:0.5rem 0px;
+}
+
+.Choose-Cardslat {
+    text-align: left;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 45%; */
+    padding-bottom: 1rem;
+}
+
+.dividerzz {
+    background-color: #016DCA;
+    width: 5rem;
+    height: 5px;
+    margin-top: 1rem;
+    /* Adjust as needed for spacing */
+    margin-bottom: 2rem;
+}
+
+.dividerzz1 {
+    background-color: #48C7EC;
+    width: 5rem;
+    height: 2px;
+    margin-bottom: 1rem;
+}
+
+
+.ContentHead {
+    margin-bottom: 0;
+}
+
+.image-slider-container {
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slider img {
+    width: 200px;
+    height: 200px;
+}
+
+.image-slider img.active {
+    transform: translateX(-100%);
+}
+
+/* testim {
+    margin-top: 0rem;
+    text-align: left;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+testim2 {
+    justify-content: left;
+    text-align: left;
+} */
+
+.Choose-Cardstesti {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid {
+ 
+    justify-content: space-evenly;
+}
+
+.mySwiper {
+    width: 70%;
+}
+
+.partnergap {
+    display: block;
+    justify-content: center;
+    height: auto;
+    padding: 4rem;
+}
+
+.testimonialSwiper {
+    width: 70%;
+}
+
+.backColor {
+    background-color: #c6ddef;
+}
+
+/* Trial section css */
+
+.latest-news-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.latest-news-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+}
+
+
+.news-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.continue-link {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* @media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+    }
+
+    .news-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+} */
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* ------------------------------Adding new CSS */
+
+
+/* @keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+} */
+
+/* .slotCounterAnimation {
+    animation: slideInFromRight 0.5s ease-in-out;
+} */
+
+.Counter {
+    background-color: #c6dcef;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Counter span {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.contCounterMob span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contCounterMob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c6dcef;
+    text-align: center;
+    color: #1e75bc;
+    padding: 1rem;
+
+}
+
+.contCounter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c6dcef;
+    text-align: center;
+    color: #1e75bc;
+    padding-bottom: 1rem;
+   
+}
+
+.contCounter p {
+    color: #1e75bc;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* .Counter-Text {
+    color: #1e75bc;
+    font-size: 1rem;
+} */
+.contCounterm{
+    width:100%;
+}
+
+

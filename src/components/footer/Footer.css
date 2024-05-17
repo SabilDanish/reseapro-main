@@ -1,0 +1,97 @@
+.containerFooter {
+  margin-top: 80px;
+}
+
+.logo {
+  margin-left: 19px;
+  margin-top: 20px;
+}
+
+.logo-Content {
+  padding: 15px;
+  text-align: justify;
+  color: #D9D9D9;
+}
+
+.Heading1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Links1 p{
+text-align: start;
+}
+
+.Links1{
+  margin-top: 28px;
+}
+
+.Heading1 {
+  display: inline-block;
+}
+.Heading1 h5 {
+  display: inline; /* Ensure the text doesn't break into new lines */
+  color: #D9D9D9; /* Change the text color if needed */
+  font-weight: 600; /* Set the font weight */
+  margin-right: 10px; /* Add some space between the text and the line */
+}
+.Heading1 .line {
+  width: 70px; /* Set the specific width for the line */
+  border-bottom: 2px solid #D9D9D9; /* Create a bottom border with sky blue color and specific width */
+  vertical-align: middle; /* Align the line vertically with the text */
+  margin-top: 20px;
+}
+
+
+.world-icon {
+  font-size: 20px; /* Adjust the size as needed */
+  color: #D9D9D9;
+}
+
+.FootCon{
+  background-color: #0574D9;
+}
+
+
+.Links1 p {
+  color:#D9D9D9
+}
+
+.logo img{
+  background-color: #D9D9D9;
+  border-radius: 3px;
+}
+
+.Links1 hr{
+  color: skyblue;
+}
+
+.FootConSocial{
+  background-color: #1D1D1D;
+  width: 100%;
+}
+
+
+.SocialRow p{
+  color: #D9D9D9;
+  margin-top: 8px;
+}
+
+.socialIcon img{
+  height: 35px;
+}
+
+.socialIcon{
+  display: flex;
+    gap: 8px;
+    margin-top: 5px !important;
+    justify-content: end;
+}
+
+.Links1 li {
+  color: antiquewhite;
+}
+
+.ImageWave{
+  width: 100%;
+}
