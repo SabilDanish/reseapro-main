@@ -24,7 +24,6 @@ function App() {
   return (
 
       <div className="App">
-        {/* <Test/> */}
         <Navbar />
         <Routes>
           <Route path='/' element={<Home loading={loading} />} />
