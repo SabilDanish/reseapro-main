@@ -33,6 +33,7 @@ import BannerButtons from '../../components/buttons/BannerButtons';
 
 
 import { ScrollingAnimatedCounter } from "scrolling-animated-counter";
+import Whatwedo from '../../components/whatWeDo/Whatwedo';
 
 
 
