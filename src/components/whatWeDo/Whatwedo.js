@@ -1,5 +1,4 @@
 import './Whatwedo.css'
-import HowWork from "../../utils/images/HowWork.PNG";
 import { faBook, faBookJournalWhills, faBuildingColumns, faChalkboard, faFlask, faVideo } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
