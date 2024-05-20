@@ -43,7 +43,7 @@ const Home = () => {
   const partners = [partner1, partner2, partner3, partner4, partner5];
 
   const isDesktop = useMediaQuery({ minWidth: 992 });
-  const isTablet = useMediaQuery({ minWidth: 420 });
+  const isTablet = useMediaQuery({ minWidth: 600 });
   return (
 
     <div className="allHome">
@@ -99,7 +99,7 @@ const Home = () => {
           <h2 className='ContentHead ContentHeadWhyChooseUs'>Why Choose Us</h2>
           <div className="dividerzz"></div>
           <Row>
-            <Col md={4}>
+            <Col lg={4}>
               <Card className='Choose-Cards' style={{ width: '100%' }}>
                 <Card.Img variant="top" style={{ width: '8rem', padding: '0' }} src={Card1} />
                 <Card.Body>
@@ -112,7 +112,7 @@ const Home = () => {
                 <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </Card>
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <Card className='Choose-Cards' style={{ width: '100%' }}>
                 <Card.Img variant="top" style={{ width: '8rem' }} src={Card2} />
                 <Card.Body>
@@ -125,7 +125,7 @@ const Home = () => {
                 <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </Card>
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <Card className='Choose-Cards' style={{ width: '100%' }}>
                 <Card.Img variant="top" style={{ width: '8rem' }} src={Card3} />
                 <Card.Body>
@@ -376,7 +376,7 @@ const Home = () => {
               <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
               <div className="dividerzz"></div>
               <Row>
-                <Col md={4}>
+                <Col lg={4}>
                   {/* <Card className='Choose-Cardslat' style={{ width: '100%', height: '23rem' }}> */}
 
                   <Card className='Choose-Cardslat' style={{ width: '100%' }}>
@@ -388,7 +388,7 @@ const Home = () => {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col md={4}>
+                <Col lg={4}>
                   <Card className='Choose-Cardslat' style={{ width: '100%' }}>
                     <Card.Img variant="top" src={lat2} />
                     <Card.Body>
@@ -398,7 +398,7 @@ const Home = () => {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col md={4}>
+                <Col lg={4}>
                   <Card className='Choose-Cardslat' style={{ width: '100%' }}>
                     <Card.Img variant="top" src={lat3} />
                     <Card.Body>
@@ -458,7 +458,7 @@ const Home = () => {
               <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
               <div className="dividerzz"></div>
               <Row>
-                <Col md={4}>
+                <Col lg={4}>
                   {/* <Card className='Choose-Cardslat' style={{ width: '100%', height: '23rem' }}> */}
 
                   <Card className='Choose-Cardslat' style={{ width: '100%' }}>
@@ -470,7 +470,7 @@ const Home = () => {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col md={4}>
+                <Col lg={4}>
                   <Card className='Choose-Cardslat' style={{ width: '100%' }}>
                     <Card.Img variant="top" src={lat2} />
                     <Card.Body>
@@ -480,7 +480,7 @@ const Home = () => {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col md={4}>
+                <Col lg={4}>
                   <Card className='Choose-Cardslat' style={{ width: '100%' }}>
                     <Card.Img variant="top" src={lat3} />
                     <Card.Body>
