@@ -207,8 +207,8 @@ const Home = () => {
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
         <div className="dividerzz"></div>
         {isDesktop ? (
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
+          <Carousel controls={false} indicators={false} interval={2000}>
+          <Carousel.Item>
               <div className="d-flex justify-content-around">
                 <Card className='Choose-Cardstesti testimonialWidth mx-2'>
                   <Card.Body>
@@ -227,65 +227,62 @@ const Home = () => {
                     </div>
                   </Card.Body>
                 </Card>
+                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                  <Card.Body>
+                    <p className="card-text">"We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."</p>
+                    <div className="d-flex justify-content-start">
+                      <Card.Img
+                        variant="top"
+                        src={testi1}
+                        className="rounded-circle mr-3"
+                        style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                      />
+                      <div style={{ paddingLeft: '1rem' }}>
+                        <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
+                        <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
+                      </div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi1}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div style={{ paddingLeft: '1rem' }}>
-                      <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
-                      <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
+              <div className="d-flex justify-content-around">
+                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                  <Card.Body>
+                    <p className="card-text">"At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me..."</p>
+                    <div className="d-flex justify-content-start">
+                      <Card.Img
+                        variant="top"
+                        src={testi2}
+                        className="rounded-circle mr-3"
+                        style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                      />
+                      <div style={{ paddingLeft: '1rem' }}>
+                        <Card.Title>Seerwan O. Hasan</Card.Title>
+                        <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
+                      </div>
                     </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me..."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi2}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div style={{ paddingLeft: '1rem' }}>
-                      <Card.Title>Seerwan O. Hasan</Card.Title>
-                      <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                  <Card.Body>
+                    <p className="card-text">"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that I am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</p>
+                    <div className="d-flex justify-content-start">
+                      <Card.Img
+                        variant="top"
+                        src={testi3}
+                        className="rounded-circle mr-3"
+                        style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                      />
+                      <div style={{ paddingLeft: '1rem' }}>
+                        <Card.Title>Dr. Laref Nora</Card.Title>
+                        <Card.Text></Card.Text>
+                      </div>
                     </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that I am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi3}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div style={{ paddingLeft: '1rem' }}>
-                      <Card.Title>Dr. Laref Nora</Card.Title>
-                      <Card.Text></Card.Text>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-
+                  </Card.Body>
+                </Card>
+              </div>
             </Carousel.Item>
           </Carousel>
         ) : (
@@ -320,8 +317,8 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div style={{ paddingLeft: '1rem' }}>
-                      <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
+<div style={{ paddingLeft: '1rem' }}> 
+                     <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
                       <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
                     </div>
                   </div>
@@ -339,7 +336,7 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div style={{ paddingLeft: '1rem' }}>
+<div style={{ paddingLeft: '1rem' }}> 
                       <Card.Title>Seerwan O. Hasan</Card.Title>
                       <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
                     </div>
@@ -358,7 +355,7 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div style={{ paddingLeft: '1rem' }}>
+<div style={{ paddingLeft: '1rem' }}> 
                       <Card.Title>Dr. Laref Nora</Card.Title>
                       <Card.Text></Card.Text>
                     </div>
