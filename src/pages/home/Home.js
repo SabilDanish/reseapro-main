@@ -35,17 +35,16 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { ScrollingAnimatedCounter } from "scrolling-animated-counter";
-import Whatwedo from '../../components/whatWeDo/Whatwedo';
 
 
 
 const Home = () => {
 
 
-
+  const partners = [partner1, partner2, partner3, partner4, partner5];
 
   const isDesktop = useMediaQuery({ minWidth: 992 });
-
+  const isTablet = useMediaQuery({ minWidth: 420 });
   return (
 
     <div className="allHome">
@@ -198,9 +197,7 @@ const Home = () => {
           </Container>
         )}
       </Container>
-      {/* ........................................................................................................................Whatwedo Section */}
 
-      <Whatwedo />
       {/* ........................................................................................................................Testimonial Section */}
       <Container className="my-5">
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
@@ -367,13 +364,59 @@ const Home = () => {
       </Container>
 
       {/* ......................................................................................................Latest News section here */}
-      <div className='Choose-Card-Main'>
+    
+      <Container className="my-5">
+        {isDesktop ? (
+          <div className='Choose-Card-Main'>
+          <Container>
+            <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
+            <div className="dividerzz"></div>
+            <Row>
+              <Col md={4}>
+              {/* <Card className='Choose-Cardslat' style={{ width: '100%', height: '23rem' }}> */}
+  
+                <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                  <Card.Img variant="top" src={lat1} />
+                  <Card.Body>
+                    <Card.Text>19 Mar, 2024</Card.Text>
+                    <Card.Title>How to Publish Research Papers in Highly Indexed Journals?</Card.Title>
+                    <Card.Text>Continue</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                  <Card.Img variant="top" src={lat2} />
+                  <Card.Body>
+                    <Card.Text>18 Mar, 2024</Card.Text>
+                    <Card.Title>Importance Of Quality Content In SCOPUS</Card.Title>
+                    <Card.Text>Continue</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                  <Card.Img variant="top" src={lat3} />
+                  <Card.Body>
+                    <Card.Text>13 Mar, 2024</Card.Text>
+                    <Card.Title>What Are The Most Popular Reasons Editors Usually Reject Your Paper For?</Card.Title>
+                    <Card.Text>Continue</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        ) : isTablet ? (
+          <div className='Choose-Card-Main'>
         <Container>
           <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
           <div className="dividerzz"></div>
           <Row>
             <Col md={4}>
-              <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+            {/* <Card className='Choose-Cardslat' style={{ width: '100%', height: '23rem' }}> */}
+
+              <Card className='Choose-Cardslat' style={{ width: '100%', height: '24rem'  }}>
                 <Card.Img variant="top" src={lat1} />
                 <Card.Body>
                   <Card.Text>19 Mar, 2024</Card.Text>
@@ -383,7 +426,7 @@ const Home = () => {
               </Card>
             </Col>
             <Col md={4}>
-              <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+              <Card className='Choose-Cardslat' style={{ width: '100%', height: '24rem'  }}>
                 <Card.Img variant="top" src={lat2} />
                 <Card.Body>
                   <Card.Text>18 Mar, 2024</Card.Text>
@@ -393,7 +436,7 @@ const Home = () => {
               </Card>
             </Col>
             <Col md={4}>
-              <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+              <Card className='Choose-Cardslat' style={{ width: '100%', height: '24rem'  }}>
                 <Card.Img variant="top" src={lat3} />
                 <Card.Body>
                   <Card.Text>13 Mar, 2024</Card.Text>
@@ -405,64 +448,66 @@ const Home = () => {
           </Row>
         </Container>
       </div>
+        ) : (
+          <div className='Choose-Card-Main'>
+          <Container>
+            <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
+            <div className="dividerzz"></div>
+            <Row>
+              <Col md={4}>
+              {/* <Card className='Choose-Cardslat' style={{ width: '100%', height: '23rem' }}> */}
+  
+                <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                  <Card.Img variant="top" src={lat1} />
+                  <Card.Body>
+                    <Card.Text>19 Mar, 2024</Card.Text>
+                    <Card.Title>How to Publish Research Papers in Highly Indexed Journals?</Card.Title>
+                    <Card.Text>Continue</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                  <Card.Img variant="top" src={lat2} />
+                  <Card.Body>
+                    <Card.Text>18 Mar, 2024</Card.Text>
+                    <Card.Title>Importance Of Quality Content In SCOPUS</Card.Title>
+                    <Card.Text>Continue</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                  <Card.Img variant="top" src={lat3} />
+                  <Card.Body>
+                    <Card.Text>13 Mar, 2024</Card.Text>
+                    <Card.Title>What Are The Most Popular Reasons Editors Usually Reject Your Paper For?</Card.Title>
+                    <Card.Text>Continue</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        )}
+      </Container>
+      
       {/* ......................................................................................................Our Partners */}
 
       <Container className="my-5">
-        <h2 className='ContentHead ContentHeadWhyChooseUs'>Our Partners</h2>
-        <div className="dividerzz"></div>
-        {isDesktop ? (
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner1} alt="Partner" className="img-fluid" />
-                <img src={partner2} alt="Partner" className="img-fluid" />
-                <img src={partner3} alt="Partner" className="img-fluid" />
-                <img src={partner4} alt="Partner" className="img-fluid" />
-                <img src={partner5} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner3} alt="Partner" className="img-fluid" />
-                <img src={partner4} alt="Partner" className="img-fluid" />
-                <img src={partner1} alt="Partner" className="img-fluid" />
-                <img src={partner2} alt="Partner" className="img-fluid" />
-                <img src={partner5} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-          </Carousel>
-        ) : (
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner1} alt="Partner" className="img-fluid" />
-
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner2} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner3} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-              <img src={partner4} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner5} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-          </Carousel>
-
-        )}
-      </Container>
+      <h2 className="ContentHead ContentHeadWhyChooseUs">Our Partners</h2>
+      <div className="dividerzz"></div>
+      <div className="scroll-container">
+        <div className="scroll-content">
+          {partners.map((partner, index) => (
+            <img key={index} src={partner} alt="Partner" className="img-fluid" />
+          ))}
+          {partners.map((partner, index) => (
+            <img key={index + partners.length} src={partner} alt="Partner" className="img-fluid" />
+          ))}
+        </div>
+      </div>
+    </Container>
     </div>
   );
 }

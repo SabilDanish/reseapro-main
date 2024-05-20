@@ -2,9 +2,6 @@
     margin-top: 2rem;
 }
 .topBanner {
-    /* /* display: block;
-    justify-content: center;
-    height: auto; */
     padding: 0;
     background-color: #c6ddef;
 
@@ -66,16 +63,11 @@
 }
 
 .Choose-Card-Main {
-    /* width: 100%;
-    max-width: 1200px;
-    margin-left: 10%;
-    padding: 10px; */
     display: flex;
     justify-content: center;
     height: auto;
-    /* padding: 2rem; */
     margin:0;
-    /* padding-left: 3rem; */
+ 
 }
 
 .Choose-Cards {
@@ -143,17 +135,6 @@
     transform: translateX(-100%);
 }
 
-/* testim {
-    margin-top: 0rem;
-    text-align: left;
-    padding: 1rem;
-    padding-bottom: 0;
-}
-
-testim2 {
-    justify-content: left;
-    text-align: left;
-} */
 
 .Choose-Cardstesti {
     text-align: left;
@@ -188,7 +169,6 @@ testim2 {
     background-color: #c6ddef;
 }
 
-/* Trial section css */
 
 .latest-news-section {
     padding: 20px;
@@ -251,17 +231,6 @@ testim2 {
     margin-top: auto;
 }
 
-/* @media (max-width: 768px) {
-    .news-container {
-        flex-direction: column;
-    }
-
-    .news-item {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-} */
-
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -280,22 +249,6 @@ testim2 {
     font-style: normal;
 }
 
-/* ------------------------------Adding new CSS */
-
-
-/* @keyframes slideInFromRight {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-} */
-
-/* .slotCounterAnimation {
-    animation: slideInFromRight 0.5s ease-in-out;
-} */
 
 .Counter {
     background-color: #c6dcef;
@@ -350,3 +303,56 @@ testim2 {
 }
 
 
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .scroll-content {
+    display: inline-block;
+    animation: scroll 5s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scroll-content img {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+
+/* for last section carousel */
+
+.Choose-Card-Main .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Choose-Card-Main .col-md-4 {
+    display: flex;
+    flex: 1;
+  }
+  
+  .Choose-Card-Main .Choose-Cardslat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem; /* Add margin to separate cards in mobile view */
+  }
+  
+  .Choose-Card-Main .Choose-Cardslat .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
