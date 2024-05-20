@@ -10,7 +10,7 @@ import youtube from '../../utils/images/SocialIcons/youtube.png'
 import twitter from '../../utils/images/SocialIcons/twitter.png'
 import skype from '../../utils/images/SocialIcons/skype.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
 
@@ -20,14 +20,14 @@ const Footer = () => {
   return (
     <>
 
-    <div className='col-lg-12'><img src={wave} className='ImageWave' alt='wave'/></div>
-      
+      <div className='col-lg-12'><img src={wave} className='ImageWave' alt='wave' /></div>
+
       <div className='container-fluid FootCon'>
         <div className='row'>
           <div className='col-lg-3' >
             <div className='logo'>
               <Link to="/">
-                <img src={logof} alt="Main Logo" onClick={scrollToTop}/>
+                <img src={logof} alt="Main Logo" onClick={scrollToTop} />
               </Link>
             </div>
             <div className='logo-Content'>
@@ -222,6 +222,9 @@ const Footer = () => {
                 </p>
               </Link>
 
+              <div className='scrollerOne' onClick={scrollToTop}>
+                <FontAwesomeIcon icon={faArrowUp} className='ScrollIcon' />
+              </div>
 
             </div>
 
@@ -236,16 +239,16 @@ const Footer = () => {
             <p>Copyrights © 2021 Reseapro Scientific Services (P) Ltd.</p>
           </div>
 
-          <div class="col-lg-6 socialIcon">
-            <img src={facebook} alt='facebook'/>
-            <img src={linkedin} alt='linkedin'/>
-            <img src={youtube} alt='youtube'/>
-            <img src={twitter} alt='twitter'/>
-            <img src={skype} alt='skype'/>
+          <div className="col-lg-6 socialIcon">
+            <img src={facebook} className="social-icon" alt="Facebook" />
+            <img src={linkedin} className="social-icon" alt="LinkedIn" />
+            <img src={youtube} className="social-icon" alt="YouTube" />
+            <img src={twitter} className="social-icon" alt="Twitter" />
+            <img src={skype} className="social-icon" alt="Skype" />
           </div>
+
         </div>
       </div>
-
 
     </>
   )

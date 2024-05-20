@@ -1,65 +1,65 @@
 import './Whatwedo.css'
 import HowWork from "../../utils/images/HowWork.PNG";
+import { faBook, faBookJournalWhills, faBuildingColumns, faChalkboard, faFlask, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
 const Whatwedo = () => {
     return (
-        <div class="container" style={{marginBottom:"35px"}}>
-            <div class="row">
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-            <h2 className='ContentHead ContentHeadWhyChooseUs'>What We Do</h2>
-            <div class="dividerzz"></div>
-            </div>
-
-                
-                    <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12 ">
-                        <div class="left_right_font left_face_content">
-                            <h3>Lorem Ipsum</h3>
-                            <p>
-                                text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                            </p>
-                        </div>
-
-                        <div class="left_right_font left_face_content paddding_right_50 p-t-70 responsive_m-b-40">
-                            <h3>Why do we use it?</h3>
-                            <p>
-                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12 paddonig">
-                        <div class="round_circle_box">
-                            <div class="logo_center">
-                                <img  src={HowWork} class="wow zoomIn animated MainImg" alt='howwork'/>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12">
-                        <div class="left_right_font right_face_content">
-                            <h3>Where can I get some</h3>
-                            <p>
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words isn't anything embarrassing                        </p>
-                        </div>
-                        <div class="left_right_font right_face_content paddding_left_50 p-t-70 Padding0">
-                            <h3>Where does it come</h3>
-                            <p>
-                                ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                            </p>
-                        </div>
-                    </div>
-
-                
-                <div class="col-md-12 col-sm-12 col-xs-12 centroid">  
-                    <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12 text_face_ceneter left_right_font p-t-40 Padding0">
-                        <h3>Transparency</h3>
-                        <p>With fluid and transparent communication and seamless integration into your style of work, we bring an ease of interaction and process</p>
-                    </div>
-                </div>
-            </div>
+        <div class="container" style={{marginTop:"20px",marginBottom:"70px"}}>
+        <h1>What We </h1>
+        <div class="row row-grid">
+          <div class="service">
+          <FontAwesomeIcon icon={faBook} style={{fontSize:"29px",marginBottom:"20px"}} />
+            <h2>Authoring Services For Researchers | Authors</h2>
+            <p>
+            We provide a range of services that are a best fit for any stage of research:...
+            </p>
+            <button class="custom-button1">KNOW MORE</button>
+          </div>
+          <div class="service">
+          <FontAwesomeIcon icon={faBookJournalWhills} style={{fontSize:"29px",marginBottom:"20px"}} />
+            <h2>Publishing Through Reseapro Journal | Reseapro Publishing</h2>
+            <p>
+            Reseapro® Publishing aims to help authors, researchers, academics, and educators...
+            </p>
+            <button class="custom-button1">KNOW MORE</button>
+          </div>
+          <div class="service">
+          <FontAwesomeIcon icon={faBuildingColumns} style={{fontSize:"29px",marginBottom:"20px"}} />
+            <h2>Services For Corporations | Institutes</h2>
+            <p>
+            We listen to all your corporate documentation needs to deliver...
+            </p>
+            <button class="custom-button1">KNOW MORE</button>
+          </div>
+          <div class="service">
+          <FontAwesomeIcon icon={faFlask} style={{fontSize:"29px",marginBottom:"20px"}} />
+            <h2>Services For Labs | Innovators</h2>
+            <p>
+            With a thorough understanding of appropriate technology, a pledge of quality , and a relentless...
+            </p>
+            <button class="custom-button1">KNOW MORE</button>
+          </div>
+          <div class="service">
+          <FontAwesomeIcon icon={faChalkboard}  style={{fontSize:"29px",marginBottom:"20px"}}/>
+            <h2>E-Learning | Education Services</h2>
+            <p>
+            The SARS-CoV-2 pandemic has created a new cohort of students and educators...
+            </p>
+            <button class="custom-button1">KNOW MORE</button>
+          </div>
+          <div class="service">
+          <FontAwesomeIcon icon={faVideo} style={{fontSize:"29px",marginBottom:"20px"}} />
+            <h2>Webinars | Conferences</h2>
+            <p>
+            Since 2015, Reseapro has offered and conducted a series of Webinars on different aspects of Publishing...
+            </p>
+            <button class="custom-button1">KNOW MORE</button>
+          </div>
         </div>
+      </div>
     )
 }
 
