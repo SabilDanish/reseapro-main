@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Whatwedo = () => {
     return (
-        <div class="container" style={{marginTop:"20px",marginBottom:"70px"}}>
-        <h1>What We </h1>
+        <div class="container" style={{marginTop:"20px",marginBottom:"60px"}}>
+        <h1>What We Do </h1>
         <div class="row row-grid">
           <div class="service">
           <FontAwesomeIcon icon={faBook} style={{fontSize:"29px",marginBottom:"20px"}} />
@@ -30,7 +30,7 @@ const Whatwedo = () => {
           <FontAwesomeIcon icon={faBuildingColumns} style={{fontSize:"29px",marginBottom:"20px"}} />
             <h2>Services For Corporations | Institutes</h2>
             <p>
-            We listen to all your corporate documentation needs to deliver...
+            We listen to all your corporate documentation needs to deliver harmonious, consistent, and high-impact writing, editing, and design services....
             </p>
             <button class="custom-button1">KNOW MORE</button>
           </div>
