@@ -43,7 +43,6 @@ const Navbar = () => {
         </li>
         <li className="nav-item"><NavLink to="/blogs" className="nav-link" activeClassName="active">Blogs</NavLink></li>
         <li className="nav-item"><NavLink to="/careers" className="nav-link" activeClassName="active">Careers</NavLink></li>
-        <li className="nav-item"><NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink></li>
       </ul>
       <div className="navbar-button">
         <button>Contact Us</button>
@@ -77,7 +76,6 @@ const Navbar = () => {
         </li>
           <li><NavLink to="/blogs" onClick={toggleSidebar}>Blogs</NavLink></li>
           <li><NavLink to="/careers" onClick={toggleSidebar}>Careers</NavLink></li>
-          <li><NavLink to="/contact" onClick={toggleSidebar}>Contact</NavLink></li>
         </ul>
       </div>
     </nav>
