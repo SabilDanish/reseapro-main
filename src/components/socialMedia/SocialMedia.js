@@ -11,11 +11,11 @@ const SocialMedia = ({ children }) => {
         <>
             <div className="Social-Media">
                 <div className="col-lg-6 socialIcons">
-                    <img src={facebook} />
-                    <img src={linkedin} />
-                    <img src={youtube} />
-                    <img src={twitter} />
-                    <img src={skype} />
+                    <img src={facebook} alt='facebook'/>
+                    <img src={linkedin} alt='linkedin'/>
+                    <img src={youtube} alt='youtube'/>
+                    <img src={twitter} alt='twitter'/>
+                    <img src={skype} alt='skype'/>
                 </div>
             </div>
             <div className='Main-Body'>

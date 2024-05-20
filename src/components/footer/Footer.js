@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <>
 
-    <div className='col-lg-12'><img src={wave} className='ImageWave' /></div>
+    <div className='col-lg-12'><img src={wave} className='ImageWave' alt='wave'/></div>
       
       <div className='container-fluid FootCon'>
         <div className='row'>
@@ -237,11 +237,11 @@ const Footer = () => {
           </div>
 
           <div class="col-lg-6 socialIcon">
-            <img src={facebook} />
-            <img src={linkedin} />
-            <img src={youtube} />
-            <img src={twitter} />
-            <img src={skype} />
+            <img src={facebook} alt='facebook'/>
+            <img src={linkedin} alt='linkedin'/>
+            <img src={youtube} alt='youtube'/>
+            <img src={twitter} alt='twitter'/>
+            <img src={skype} alt='skype'/>
           </div>
         </div>
       </div>
