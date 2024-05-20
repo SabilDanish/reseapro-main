@@ -33,6 +33,7 @@ import BannerButtons from '../../components/buttons/BannerButtons';
 
 
 import { ScrollingAnimatedCounter } from "scrolling-animated-counter";
+import Whatwedo from '../../components/whatWeDo/Whatwedo';
 
 
 
@@ -198,7 +199,8 @@ const Home = () => {
 
       
 
-
+       {/* what we do  */}
+      <Whatwedo/>
 
       {/* Testimonial Section Starts here */}
       <Container className="my-5">

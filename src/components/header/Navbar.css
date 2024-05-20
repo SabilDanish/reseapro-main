@@ -213,6 +213,11 @@
     border-bottom: 1px solid #9cc7db ;
     font-size: 16px;
 }
-.dropdown-content .dropdown-link:hover{
-   background-color: #4cacff;
+.dropdown-content .dropdown-link {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background-color and transform */
+}
+
+.dropdown-content .dropdown-link:hover {
+    background-color: #4cacff;
+    transform: scale(1.05); /* Slightly enlarge the element on hover */
 }
