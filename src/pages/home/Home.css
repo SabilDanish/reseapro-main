@@ -272,6 +272,7 @@
     background-color: #c6dcef;
     text-align: center;
     color: #1e75bc;
+    font-weight: bold;
     padding: 1rem;
 
 }
@@ -284,6 +285,8 @@
     text-align: center;
     color: #1e75bc;
     padding-bottom: 1rem;
+    font-weight: bold;
+
    
 }
 
