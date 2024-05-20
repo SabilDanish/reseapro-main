@@ -273,6 +273,9 @@
     text-align: center;
     color: #1e75bc;
     width: 10rem;
+    font-weight: bold;
+    padding: 1rem;
+
 }
 
 .contCounter {
@@ -284,6 +287,7 @@
     color: #1e75bc;
     padding-bottom: 1rem;
     width: 100%;
+    font-weight: bold;
 }
 
 .contCounter p {
