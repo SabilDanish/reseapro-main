@@ -40,10 +40,10 @@ import Whatwedo from '../../components/whatWeDo/Whatwedo';
 const Home = () => {
 
 
-
+  const partners = [partner1, partner2, partner3, partner4, partner5];
 
   const isDesktop = useMediaQuery({ minWidth: 992 });
-
+  const isTablet = useMediaQuery({ minWidth: 600 });
   return (
 
     <div className="allHome">
@@ -99,7 +99,7 @@ const Home = () => {
           <h2 className='ContentHead ContentHeadWhyChooseUs'>Why Choose Us</h2>
           <div className="dividerzz"></div>
           <Row>
-            <Col md={4}>
+            <Col lg={4}>
               <Card className='Choose-Cards' style={{ width: '100%' }}>
                 <Card.Img variant="top" style={{ width: '8rem', padding: '0' }} src={Card1} />
                 <Card.Body>
@@ -112,7 +112,7 @@ const Home = () => {
                 <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </Card>
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <Card className='Choose-Cards' style={{ width: '100%' }}>
                 <Card.Img variant="top" style={{ width: '8rem' }} src={Card2} />
                 <Card.Body>
@@ -125,7 +125,7 @@ const Home = () => {
                 <BannerButtons title={"KNOW MORE"} path={"/about"} />
               </Card>
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <Card className='Choose-Cards' style={{ width: '100%' }}>
                 <Card.Img variant="top" style={{ width: '8rem' }} src={Card3} />
                 <Card.Body>
@@ -197,18 +197,18 @@ const Home = () => {
         )}
       </Container>
 
-      
 
-       {/* what we do  */}
-      <Whatwedo/>
+
+      {/* what we do  */}
+      <Whatwedo />
 
       {/* Testimonial Section Starts here */}
       <Container className="my-5">
         <h2 className='ContentHead ContentHeadWhyChooseUs'>Testimonial</h2>
         <div className="dividerzz"></div>
         {isDesktop ? (
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
+          <Carousel controls={false} indicators={false} interval={2000}>
+          <Carousel.Item>
               <div className="d-flex justify-content-around">
                 <Card className='Choose-Cardstesti testimonialWidth mx-2'>
                   <Card.Body>
@@ -227,65 +227,62 @@ const Home = () => {
                     </div>
                   </Card.Body>
                 </Card>
-                </div>
+                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                  <Card.Body>
+                    <p className="card-text">"We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."</p>
+                    <div className="d-flex justify-content-start">
+                      <Card.Img
+                        variant="top"
+                        src={testi1}
+                        className="rounded-circle mr-3"
+                        style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                      />
+                      <div style={{ paddingLeft: '1rem' }}>
+                        <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
+                        <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
+                      </div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </div>
             </Carousel.Item>
             <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"We are very thankful to you for your help in improving our manuscript! Without your help, we could not have published our reviews. We will continue to work and use your help. Please accept sincere gratitude from all the authors of the manuscript."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi1}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div style={{ paddingLeft: '1rem' }}>
-                      <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
-                      <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
+              <div className="d-flex justify-content-around">
+                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                  <Card.Body>
+                    <p className="card-text">"At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me..."</p>
+                    <div className="d-flex justify-content-start">
+                      <Card.Img
+                        variant="top"
+                        src={testi2}
+                        className="rounded-circle mr-3"
+                        style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                      />
+                      <div style={{ paddingLeft: '1rem' }}>
+                        <Card.Title>Seerwan O. Hasan</Card.Title>
+                        <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
+                      </div>
                     </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"At the beginning of my research works I faced a lot of obstacles including finding a correct journal to publish my researches in, English language edition and proofreading, response to reviewers, etc. Manuscriptedit had solved these problems for me..."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi2}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div style={{ paddingLeft: '1rem' }}>
-                      <Card.Title>Seerwan O. Hasan</Card.Title>
-                      <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card className='Choose-Cardstesti testimonialWidth mx-2'>
+                  <Card.Body>
+                    <p className="card-text">"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that I am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</p>
+                    <div className="d-flex justify-content-start">
+                      <Card.Img
+                        variant="top"
+                        src={testi3}
+                        className="rounded-circle mr-3"
+                        style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
+                      />
+                      <div style={{ paddingLeft: '1rem' }}>
+                        <Card.Title>Dr. Laref Nora</Card.Title>
+                        <Card.Text></Card.Text>
+                      </div>
                     </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Card className='Choose-Cardstesti testimonialWidth'>
-                <Card.Body>
-                  <p className="card-text">"Thank you very much Manuscriptedit for the type of writing which is apical, really it is a good job that exceeds my expectations. The most important thing is that I am thankful to the people who work in this association for the good work and the good writing and especially the revisions made with the relevant comments."</p>
-                  <div className="d-flex justify-content-start">
-                    <Card.Img
-                      variant="top"
-                      src={testi3}
-                      className="rounded-circle mr-3"
-                      style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <div style={{ paddingLeft: '1rem' }}>
-                      <Card.Title>Dr. Laref Nora</Card.Title>
-                      <Card.Text></Card.Text>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-
+                  </Card.Body>
+                </Card>
+              </div>
             </Carousel.Item>
           </Carousel>
         ) : (
@@ -320,8 +317,8 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div style={{ paddingLeft: '1rem' }}>
-                      <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
+<div style={{ paddingLeft: '1rem' }}> 
+                     <Card.Title>Dr. Tatiana Yu. GAGKAEVA</Card.Title>
                       <Card.Text>All-Russian Institute of Plant Protection (VIZR), RUSSIA.</Card.Text>
                     </div>
                   </div>
@@ -339,7 +336,7 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div style={{ paddingLeft: '1rem' }}>
+<div style={{ paddingLeft: '1rem' }}> 
                       <Card.Title>Seerwan O. Hasan</Card.Title>
                       <Card.Text>M.B.Ch.B (University of Sulaimani/School of Medicine)</Card.Text>
                     </div>
@@ -358,7 +355,7 @@ const Home = () => {
                       className="rounded-circle mr-3"
                       style={{ width: '4rem', height: '4rem', borderRadius: '50%', boxShadow: '0 6px 8px rgba(0, 0, 0, 0.1)' }}
                     />
-                    <div style={{ paddingLeft: '1rem' }}>
+<div style={{ paddingLeft: '1rem' }}> 
                       <Card.Title>Dr. Laref Nora</Card.Title>
                       <Card.Text></Card.Text>
                     </div>
@@ -371,103 +368,151 @@ const Home = () => {
       </Container>
 
       {/* ......................................................................................................Latest News section here */}
-      <div className='Choose-Card-Main'>
-        <Container>
-          <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
-          <div className="dividerzz"></div>
-          <Row>
-            <Col md={4}>
-              <Card className='Choose-Cardslat' style={{ width: '100%' }}>
-                <Card.Img variant="top" src={lat1} />
-                <Card.Body>
-                  <Card.Text>19 Mar, 2024</Card.Text>
-                  <Card.Title>How to Publish Research Papers in Highly Indexed Journals?</Card.Title>
-                  <Card.Text>Continue</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className='Choose-Cardslat' style={{ width: '100%' }}>
-                <Card.Img variant="top" src={lat2} />
-                <Card.Body>
-                  <Card.Text>18 Mar, 2024</Card.Text>
-                  <Card.Title>Importance Of Quality Content In SCOPUS</Card.Title>
-                  <Card.Text>Continue</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className='Choose-Cardslat' style={{ width: '100%' }}>
-                <Card.Img variant="top" src={lat3} />
-                <Card.Body>
-                  <Card.Text>13 Mar, 2024</Card.Text>
-                  <Card.Title>What Are The Most Popular Reasons Editors Usually Reject Your Paper For?</Card.Title>
-                  <Card.Text>Continue</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+
+      <Container className="my-5">
+        {isDesktop ? (
+          <div className='Choose-Card-Main'>
+            <Container>
+              <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
+              <div className="dividerzz"></div>
+              <Row>
+                <Col lg={4}>
+                  {/* <Card className='Choose-Cardslat' style={{ width: '100%', height: '23rem' }}> */}
+
+                  <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                    <Card.Img variant="top" src={lat1} />
+                    <Card.Body>
+                      <Card.Text>19 Mar, 2024</Card.Text>
+                      <Card.Title>How to Publish Research Papers in Highly Indexed Journals?</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col lg={4}>
+                  <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                    <Card.Img variant="top" src={lat2} />
+                    <Card.Body>
+                      <Card.Text>18 Mar, 2024</Card.Text>
+                      <Card.Title>Importance Of Quality Content In SCOPUS</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col lg={4}>
+                  <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                    <Card.Img variant="top" src={lat3} />
+                    <Card.Body>
+                      <Card.Text>13 Mar, 2024</Card.Text>
+                      <Card.Title>What Are The Most Popular Reasons Editors Usually Reject Your Paper For?</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        ) : isTablet ? (
+          <div className='Choose-Card-Main'>
+            <Container>
+              <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
+              <div className="dividerzz"></div>
+              <Row>
+                <Col md={4}>
+                  {/* <Card className='Choose-Cardslat' style={{ width: '100%', height: '23rem' }}> */}
+
+                  <Card className='Choose-Cardslat' style={{ width: '100%', height: '24rem' }}>
+                    <Card.Img variant="top" src={lat1} />
+                    <Card.Body>
+                      <Card.Text>19 Mar, 2024</Card.Text>
+                      <Card.Title>How to Publish Research Papers in Highly Indexed Journals?</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4}>
+                  <Card className='Choose-Cardslat' style={{ width: '100%', height: '24rem' }}>
+                    <Card.Img variant="top" src={lat2} />
+                    <Card.Body>
+                      <Card.Text>18 Mar, 2024</Card.Text>
+                      <Card.Title>Importance Of Quality Content In SCOPUS</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4}>
+                  <Card className='Choose-Cardslat' style={{ width: '100%', height: '24rem' }}>
+                    <Card.Img variant="top" src={lat3} />
+                    <Card.Body>
+                      <Card.Text>13 Mar, 2024</Card.Text>
+                      <Card.Title>What Are The Most Popular Reasons Editors Usually Reject Your Paper For?</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        ) : (
+          <div className='Choose-Card-Main'>
+            <Container>
+              <h2 className='ContentHead ContentHeadWhyChooseUs'>Latest News</h2>
+              <div className="dividerzz"></div>
+              <Row>
+                <Col lg={4}>
+                  {/* <Card className='Choose-Cardslat' style={{ width: '100%', height: '23rem' }}> */}
+
+                  <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                    <Card.Img variant="top" src={lat1} />
+                    <Card.Body>
+                      <Card.Text>19 Mar, 2024</Card.Text>
+                      <Card.Title>How to Publish Research Papers in Highly Indexed Journals?</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col lg={4}>
+                  <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                    <Card.Img variant="top" src={lat2} />
+                    <Card.Body>
+                      <Card.Text>18 Mar, 2024</Card.Text>
+                      <Card.Title>Importance Of Quality Content In SCOPUS</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col lg={4}>
+                  <Card className='Choose-Cardslat' style={{ width: '100%' }}>
+                    <Card.Img variant="top" src={lat3} />
+                    <Card.Body>
+                      <Card.Text>13 Mar, 2024</Card.Text>
+                      <Card.Title>What Are The Most Popular Reasons Editors Usually Reject Your Paper For?</Card.Title>
+                      <Card.Text>Continue</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        )}
+      </Container>
+
       {/* ......................................................................................................Our Partners */}
 
       <Container className="my-5">
-        <h2 className='ContentHead ContentHeadWhyChooseUs'>Our Partners</h2>
+        <h2 className="ContentHead ContentHeadWhyChooseUs">Our Partners</h2>
         <div className="dividerzz"></div>
-        {isDesktop ? (
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner1} alt="Partner" className="img-fluid" />
-                <img src={partner2} alt="Partner" className="img-fluid" />
-                <img src={partner3} alt="Partner" className="img-fluid" />
-                <img src={partner4} alt="Partner" className="img-fluid" />
-                <img src={partner5} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner3} alt="Partner" className="img-fluid" />
-                <img src={partner4} alt="Partner" className="img-fluid" />
-                <img src={partner1} alt="Partner" className="img-fluid" />
-                <img src={partner2} alt="Partner" className="img-fluid" />
-                <img src={partner5} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-          </Carousel>
-        ) : (
-          <Carousel controls={false} indicators={false}>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner1} alt="Partner" className="img-fluid" />
-
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner2} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner3} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner4} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="d-flex justify-content-around">
-                <img src={partner5} alt="Partner" className="img-fluid" />
-              </div>
-            </Carousel.Item>
-          </Carousel>
-
-        )}
+        <div className="scroll-container">
+          <div className="scroll-content">
+            {partners.map((partner, index) => (
+              <img key={index} src={partner} alt="Partner" className="img-fluid" />
+            ))}
+            {partners.map((partner, index) => (
+              <img key={index + partners.length} src={partner} alt="Partner" className="img-fluid" />
+            ))}
+          </div>
+        </div>
       </Container>
-    </div >
+    </div>
   );
 }
 
