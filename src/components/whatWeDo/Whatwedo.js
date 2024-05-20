@@ -32,7 +32,7 @@ const Whatwedo = () => {
                     <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12 paddonig">
                         <div class="round_circle_box">
                             <div class="logo_center">
-                                <img  src={HowWork} class="wow zoomIn animated MainImg" />
+                                <img  src={HowWork} class="wow zoomIn animated MainImg" alt='howwork'/>
                             </div>
                         </div>
 
