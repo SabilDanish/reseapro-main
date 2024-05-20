@@ -1,6 +1,5 @@
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import topBanner from "../../utils/images/BannerReseaproHome.jpg";
 import './Home.css';
 import topban from "../../utils/images/Banner-f.png";
 import about from "../../utils/images/Aboutus.png";
@@ -20,7 +19,7 @@ import partner3 from "../../utils/images/Partner/natural-products.png";
 import partner4 from "../../utils/images/Partner/partner1.png";
 import partner5 from "../../utils/images/Partner/pharmacognosy-2018.png";
 import Card from 'react-bootstrap/Card';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 
