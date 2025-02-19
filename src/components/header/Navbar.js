@@ -21,8 +21,8 @@ const Navbar = () => {
     <nav className="Reseapro-Navbar">
       <div className="navbar-image"><img src={logoM} alt="Logo" /></div>
       <ul className="nav-list">
-        <li className="nav-item"><NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink></li>
-        <li className="nav-item"><NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink></li>
+        <li className="nav-item"><NavLink exact to="/reseapro" className="nav-link" activeClassName="active">Home</NavLink></li>
+        <li className="nav-item"><NavLink to="/reseapro/about" className="nav-link" activeClassName="active">About</NavLink></li>
         <li className="nav-item">
         <span className="nav-link" onClick={toggleDropdown}>
             Services <FontAwesomeIcon icon={faAngleDown} />
@@ -41,8 +41,8 @@ const Navbar = () => {
             </div>
           )}
         </li>
-        <li className="nav-item"><NavLink to="/blogs" className="nav-link" activeClassName="active">Blogs</NavLink></li>
-        <li className="nav-item"><NavLink to="/careers" className="nav-link" activeClassName="active">Careers</NavLink></li>
+        <li className="nav-item"><NavLink to="https://www.manuscriptedit.com/scholar-hangout/" className="nav-link" activeClassName="active">Blogs</NavLink></li>
+        <li className="nav-item"><NavLink to="/reseapro/careers" className="nav-link" activeClassName="active">Careers</NavLink></li>
       </ul>
       <div className="navbar-button">
         <button>Contact Us</button>

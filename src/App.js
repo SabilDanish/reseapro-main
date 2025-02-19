@@ -14,12 +14,12 @@ import Test from './pages/home/Test';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
 
@@ -27,11 +27,10 @@ function App() {
         {/* <Test/> */}
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home loading={loading} />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/blogs' element={<Blog />} />
-          <Route path='/careers' element={<Careers />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/reseapro' element={<Home loading={loading} />} />
+          <Route path='/reseapro/about' element={<About />} />
+          <Route path='/reseapro/careers' element={<Careers />} />
+          <Route path='/reseapro/contact' element={<Contact />} />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
         <Footer />
